@@ -74,7 +74,7 @@
     letter-spacing: -.04em;
   }
   .hero p {
-    max-width: 850px;
+    max-width: 900px;
     font-size: 18px;
     margin: 0 0 22px;
     color: rgba(255,255,255,.88);
@@ -92,10 +92,7 @@
     padding: 15px;
     backdrop-filter: blur(8px);
   }
-  .stat b {
-    display: block;
-    font-size: 24px;
-  }
+  .stat b { display: block; font-size: 24px; }
   .stat span {
     display: block;
     font-size: 12px;
@@ -119,10 +116,7 @@
     box-shadow: 0 12px 35px rgba(21, 35, 68, .08);
     backdrop-filter: blur(12px);
   }
-  .progress-wrap {
-    display: grid;
-    gap: 7px;
-  }
+  .progress-wrap { display: grid; gap: 7px; }
   .progress-label {
     display: flex;
     justify-content: space-between;
@@ -153,10 +147,7 @@
     background: var(--blue);
     color: white;
   }
-  button.secondary {
-    background: #edf2fb;
-    color: var(--blue-dark);
-  }
+  button.secondary { background: #edf2fb; color: var(--blue-dark); }
   .grid-2 {
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -170,18 +161,12 @@
     padding: 24px;
     box-shadow: 0 10px 30px rgba(21, 35, 68, .06);
   }
-  .panel h2, .panel h3 {
-    margin: 0 0 10px;
-    letter-spacing: -.02em;
-  }
+  .panel h2, .panel h3 { margin: 0 0 10px; letter-spacing: -.02em; }
   .panel p { color: var(--muted); margin: 0 0 12px; }
-  .routine {
-    display: grid;
-    gap: 10px;
-  }
+  .routine { display: grid; gap: 10px; }
   .routine-item {
     display: grid;
-    grid-template-columns: 90px 1fr;
+    grid-template-columns: 92px 1fr;
     gap: 12px;
     padding: 12px;
     border-radius: 16px;
@@ -209,9 +194,7 @@
     text-transform: uppercase;
     letter-spacing: .07em;
   }
-  .resource-library {
-    margin-top: 18px;
-  }
+  .resource-library { margin-top: 18px; }
   .resource-grid {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
@@ -227,10 +210,7 @@
     box-shadow: 0 8px 24px rgba(21, 35, 68, .05);
     transition: transform .15s ease, border-color .15s ease;
   }
-  .resource-card:hover {
-    transform: translateY(-2px);
-    border-color: var(--blue);
-  }
+  .resource-card:hover { transform: translateY(-2px); border-color: var(--blue); }
   .resource-card span {
     display: inline-block;
     background: var(--soft-blue);
@@ -243,15 +223,21 @@
     letter-spacing: .06em;
     margin-bottom: 10px;
   }
-  .resource-card strong {
-    display: block;
-    margin-bottom: 8px;
+  .resource-card strong { display: block; margin-bottom: 8px; }
+  .resource-card p { margin: 0; color: var(--muted); font-size: 13px; }
+  .manual-map {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 12px;
+    margin-top: 14px;
   }
-  .resource-card p {
-    margin: 0;
-    color: var(--muted);
-    font-size: 13px;
+  .manual-map-card {
+    background: #f8faff;
+    border: 1px solid #e5ecf7;
+    border-radius: 18px;
+    padding: 14px;
   }
+  .manual-map-card b { color: var(--blue-dark); display: block; margin-bottom: 8px; }
   .week {
     margin-top: 22px;
     background: var(--paper);
@@ -276,11 +262,7 @@
     letter-spacing: .11em;
     font-size: 12px;
   }
-  .week h2 {
-    margin: 0;
-    font-size: clamp(24px, 3vw, 36px);
-    letter-spacing: -.03em;
-  }
+  .week h2 { margin: 0; font-size: clamp(24px, 3vw, 36px); letter-spacing: -.03em; }
   .week-badge {
     white-space: nowrap;
     display: inline-flex;
@@ -303,19 +285,9 @@
     border-radius: 18px;
     padding: 14px;
   }
-  .week-summary b {
-    display: block;
-    color: var(--blue-dark);
-    margin-bottom: 6px;
-  }
-  .week-summary p, .week-summary ul {
-    margin: 0;
-    color: var(--muted);
-    font-size: 14px;
-  }
-  .week-summary ul {
-    padding-left: 18px;
-  }
+  .week-summary b { display: block; color: var(--blue-dark); margin-bottom: 6px; }
+  .week-summary p, .week-summary ul { margin: 0; color: var(--muted); font-size: 14px; }
+  .week-summary ul { padding-left: 18px; }
   .resource-row {
     display: flex;
     flex-wrap: wrap;
@@ -343,21 +315,14 @@
     font-weight: 900;
     text-transform: uppercase;
   }
-  .days {
-    display: grid;
-    gap: 12px;
-  }
+  .days { display: grid; gap: 12px; }
   .day-card {
     border: 1px solid var(--line);
     border-radius: 20px;
     padding: 14px;
     background: #fff;
   }
-  .day-top {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-  }
+  .day-top { display: flex; justify-content: space-between; align-items: center; }
   .checkline {
     display: grid;
     grid-template-columns: auto 1fr;
@@ -365,11 +330,7 @@
     align-items: center;
     cursor: pointer;
   }
-  .checkline input {
-    position: absolute;
-    opacity: 0;
-    pointer-events: none;
-  }
+  .checkline input { position: absolute; opacity: 0; pointer-events: none; }
   .fake-check {
     width: 25px;
     height: 25px;
@@ -379,27 +340,13 @@
     place-items: center;
     flex: 0 0 auto;
   }
-  .checkline input:checked + .fake-check {
-    background: var(--green);
-    border-color: var(--green);
-  }
-  .checkline input:checked + .fake-check:after {
-    content: "✓";
-    color: #fff;
-    font-weight: 900;
-  }
-  .checkline strong {
-    display: block;
-  }
-  .checkline em {
-    display: block;
-    color: var(--muted);
-    font-style: normal;
-    font-size: 13px;
-  }
+  .checkline input:checked + .fake-check { background: var(--green); border-color: var(--green); }
+  .checkline input:checked + .fake-check:after { content: "✓"; color: #fff; font-weight: 900; }
+  .checkline strong { display: block; }
+  .checkline em { display: block; color: var(--muted); font-style: normal; font-size: 13px; }
   .day-grid {
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-columns: 1.15fr 1.15fr 1fr 1.05fr;
     gap: 10px;
     margin-top: 12px;
   }
@@ -409,15 +356,19 @@
     padding: 12px;
     border: 1px solid #e7edf7;
   }
-  .day-grid b {
+  .day-grid b { color: var(--blue-dark); display: block; margin-bottom: 5px; }
+  .day-grid p { margin: 0 0 6px; color: var(--muted); font-size: 14px; }
+  .mini-links { display: flex; flex-wrap: wrap; gap: 6px; margin-top: 8px !important; }
+  .mini-links a {
+    display: inline-flex;
+    text-decoration: none;
     color: var(--blue-dark);
-    display: block;
-    margin-bottom: 5px;
-  }
-  .day-grid p {
-    margin: 0;
-    color: var(--muted);
-    font-size: 14px;
+    border: 1px solid #cfd9ea;
+    background: #fff;
+    border-radius: 999px;
+    padding: 5px 8px;
+    font-size: 12px;
+    font-weight: 750;
   }
   .notes-label {
     display: block;
@@ -439,6 +390,16 @@
     color: var(--ink);
     background: #fbfcff;
   }
+  .safety { border-left: 5px solid var(--rose); background: var(--soft-rose); }
+  .video-note { border-left: 5px solid var(--gold); background: var(--soft-gold); }
+  .vacation-week { border-color: #f1d38a; background: #fffdf5; }
+  .vacation-box {
+    background: #fff6d8;
+    border: 1px solid #f1d38a;
+    border-radius: 18px;
+    padding: 16px;
+    color: #654200;
+  }
   .rubric {
     display: grid;
     grid-template-columns: repeat(6, 1fr);
@@ -451,119 +412,36 @@
     padding: 14px;
   }
   .rubric-card b { display: block; margin-bottom: 8px; }
-  .rubric-card label {
-    display: block;
-    margin: 7px 0;
-    color: var(--muted);
-    font-size: 13px;
-  }
-  .footer-note {
-    color: var(--muted);
-    text-align: center;
-    margin: 26px 0 0;
-    font-size: 13px;
-  }
-  .safety {
-    border-left: 5px solid var(--rose);
-    background: var(--soft-rose);
-  }
-  @media (max-width: 900px) {
-    .hero-stats, .grid-2, .week-summary, .day-grid, .resource-grid, .rubric {
-      grid-template-columns: 1fr;
-    }
-    .controls {
-      grid-template-columns: 1fr;
-      position: static;
-    }
+  .rubric-card label { display: block; margin: 7px 0; color: var(--muted); font-size: 13px; }
+  .footer-note { color: var(--muted); text-align: center; margin: 26px 0 0; font-size: 13px; }
+  @media (max-width: 1000px) {
+    .hero-stats, .grid-2, .week-summary, .day-grid, .resource-grid, .manual-map, .rubric { grid-template-columns: 1fr; }
+    .controls { grid-template-columns: 1fr; position: static; }
   }
   @media print {
     @page { size: letter; margin: .45in; }
-    body {
-      background: #fff;
-      color: #111;
-      font-size: 10.5pt;
-    }
-    .shell {
-      width: 100%;
-      padding: 0;
-    }
-    .hero, .panel, .week {
-      box-shadow: none;
-      border-color: #cfd7e6;
-    }
-    .hero {
-      color: #111;
-      background: #fff;
-      border: 2px solid #111;
-      padding: 18px;
-    }
+    body { background: #fff; color: #111; font-size: 10.2pt; }
+    .shell { width: 100%; padding: 0; }
+    .hero, .panel, .week { box-shadow: none; border-color: #cfd7e6; }
+    .hero { color: #111; background: #fff; border: 2px solid #111; padding: 18px; }
     .hero p { color: #333; }
     .hero-stats { grid-template-columns: repeat(4, 1fr); }
-    .stat {
-      background: #fff;
-      border: 1px solid #aaa;
-    }
+    .stat { background: #fff; border: 1px solid #aaa; }
     .stat span { color: #444; }
-    .controls, button {
-      display: none !important;
-    }
-    .grid-2 {
-      grid-template-columns: 1fr 1fr;
-    }
-    .resource-grid {
-      grid-template-columns: repeat(2, 1fr);
-    }
-    .week {
-      page-break-inside: avoid;
-      break-inside: avoid;
-      margin-top: 16px;
-      padding: 15px;
-      border-radius: 12px;
-    }
-    .page-break {
-      page-break-before: auto;
-    }
-    .week-header {
-      padding-bottom: 8px;
-    }
-    .week h2 {
-      font-size: 19pt;
-    }
-    .week-summary {
-      grid-template-columns: 1fr 1fr 1fr;
-      gap: 7px;
-      margin: 8px 0;
-    }
-    .day-card {
-      page-break-inside: avoid;
-      break-inside: avoid;
-      padding: 8px;
-      border-radius: 10px;
-      margin-bottom: 6px;
-    }
-    .day-grid {
-      grid-template-columns: 1fr 1fr 1fr;
-      gap: 6px;
-      margin-top: 6px;
-    }
-    .day-grid > div, .week-summary > div {
-      padding: 7px;
-      border-radius: 8px;
-      background: #fff;
-    }
-    textarea {
-      min-height: 34px;
-      border: 1px solid #aaa;
-      background: #fff;
-    }
-    .fake-check {
-      width: 18px;
-      height: 18px;
-      border-radius: 4px;
-    }
-    a[href]:after {
-      content: "";
-    }
+    .controls, button { display: none !important; }
+    .grid-2 { grid-template-columns: 1fr 1fr; }
+    .resource-grid { grid-template-columns: repeat(2, 1fr); }
+    .manual-map { grid-template-columns: repeat(2, 1fr); }
+    .week { page-break-inside: avoid; break-inside: avoid; margin-top: 16px; padding: 15px; border-radius: 12px; }
+    .week-header { padding-bottom: 8px; }
+    .week h2 { font-size: 19pt; }
+    .week-summary { grid-template-columns: 1fr 1fr 1fr; gap: 7px; margin: 8px 0; }
+    .day-card { page-break-inside: avoid; break-inside: avoid; padding: 8px; border-radius: 10px; margin-bottom: 6px; }
+    .day-grid { grid-template-columns: 1fr 1fr; gap: 6px; margin-top: 6px; }
+    .day-grid > div, .week-summary > div { padding: 7px; border-radius: 8px; background: #fff; }
+    textarea { min-height: 34px; border: 1px solid #aaa; background: #fff; }
+    .fake-check { width: 18px; height: 18px; border-radius: 4px; }
+    a[href]:after { content: ""; }
   }
 </style>
 </head>
@@ -573,12 +451,12 @@
     <div class="hero-content">
       <span class="kicker">Summer 2026 Maker Camp</span>
       <h1>Real 3D Modeling Camp</h1>
-      <p>A 5-day-per-week summer camp plan for a smart 10-year-old who already sculpts in the real world and wants to learn real 3D modeling for 3D printing, with vacation protected from May 28 through June 5. Main tool: Blender. Secondary tool later: Fusion for exact functional parts.</p>
+      <p>A 5 day per week summer camp plan for a smart 10 year old who already sculpts in the real world and wants to learn real 3D modeling for 3D printing. Blender is the main tool. Fusion is introduced later for exact functional parts. Vacation is protected from May 28 through June 5.</p>
       <div class="hero-stats">
         <div class="stat"><b>May 14</b><span>Launch day</span></div>
         <div class="stat"><b>July 28</b><span>Back to school</span></div>
         <div class="stat"><b>46</b><span>Camp sessions</span></div>
-        <div class="stat"><b>May 28-Jun 5</b><span>Vacation break</span></div>
+        <div class="stat"><b>May 28 to Jun 5</b><span>Vacation break</span></div>
       </div>
     </div>
   </header>
@@ -588,178 +466,309 @@
       <div class="progress-label"><span>Camp progress</span><span id="progressText">0 of 46 camp sessions complete</span></div>
       <div class="progress-bar"><div class="progress-fill" id="progressFill"></div></div>
     </div>
-    <button onclick="window.print()">Print / Save as PDF</button>
+    <button onclick="window.print()">Print or Save as PDF</button>
     <button class="secondary" onclick="resetCamp()">Clear Progress</button>
   </nav>
 
   <section class="grid-2">
     <div class="panel">
       <h2>Daily Camp Rhythm</h2>
-      <p>Keep sessions short enough to stay fun. Most days should be 60 to 90 minutes. Longer print days can run in the background with parent supervision.</p>
+      <p>The video tutorial is about 4 hours and 19 minutes. With pausing, building, fixing mistakes, and saving versions, it becomes roughly 7 to 8 hours of guided work. That is the spine, not the whole camp. The rest of the summer is original modeling, sculpting, print prep, functional design, rendering, and portfolio work.</p>
       <div class="routine">
-        <div class="routine-item"><b>10 min</b><span>Warm up: open yesterday's file, review the goal, fix one small thing.</span></div>
-        <div class="routine-item"><b>20 min</b><span>Skill lesson: one new tool only.</span></div>
-        <div class="routine-item"><b>30 min</b><span>Build time: apply the skill to the project.</span></div>
-        <div class="routine-item"><b>10 min</b><span>Save, export, screenshot, or write a camp note.</span></div>
-        <div class="routine-item"><b>Optional</b><span>Slice or print only when the model is worth testing.</span></div>
+        <div class="routine-item"><b>5 to 15 min</b><span>Watch or read only the section needed for today.</span></div>
+        <div class="routine-item"><b>20 to 30 min</b><span>Skill drill: one Blender skill, repeated until she can do it without panic.</span></div>
+        <div class="routine-item"><b>30 to 60 min</b><span>Build time: apply the skill to her own model, not just the doughnut.</span></div>
+        <div class="routine-item"><b>10 min</b><span>Save a numbered version, export, screenshot, or write a camp note.</span></div>
+        <div class="routine-item"><b>Optional</b><span>Slice or print only when the model is worth testing. Parent handles printer operations.</span></div>
       </div>
     </div>
     <div class="panel safety">
       <h2>Parent Safety Rules</h2>
-      <p>She can model, choose designs, inspect slicer previews, and keep the print log. Parent controls printer setup, hot parts, filament changes, failed-print removal, blades, sanding, ventilation decisions, and account setup.</p>
+      <p>She can model, choose designs, inspect slicer previews, and keep the print log. Parent controls printer setup, hot parts, filament changes, failed print removal, blades, sanding, ventilation decisions, and account setup.</p>
       <table class="software-table">
         <tr><th>Tool</th><th>Role</th></tr>
-        <tr><td>Blender</td><td>Main learning tool for sculpting, modeling, cleanup, and STL export.</td></tr>
-        <tr><td>PrusaSlicer or Cura</td><td>Slicer for turning models into printable files.</td></tr>
-        <tr><td>Fusion</td><td>Add later for exact measurements and functional prints.</td></tr>
+        <tr><td>Blender</td><td>Main learning tool for sculpting, modeling, cleanup, rendering, and STL export.</td></tr>
+        <tr><td>PrusaSlicer or Cura</td><td>Slicer for turning models into printable files and previewing problems before printing.</td></tr>
+        <tr><td>Fusion</td><td>Later add on for exact measurements, functional parts, clips, boxes, holders, and mechanical thinking.</td></tr>
       </table>
     </div>
   </section>
 
   <section class="panel resource-library">
     <h2>Resource Library</h2>
-    <p>These links are built into the weekly plan. Open them from the HTML file while working, then use the print button to save the planner as a PDF.</p>
+    <p>The uploaded Blender manual package was used to map the official topics. The hosted page uses public Blender manual links instead of local zip file paths so the resources will still open from Vercel.</p>
     <div class="resource-grid">
       
-    <a class="resource-card" href="https://www.blender.org/download/" target="_blank" rel="noopener">
-      <span>Core software</span>
-      <strong>Blender Download</strong>
-      <p>Install the main modeling/sculpting program.</p>
-    </a>
-    
-    <a class="resource-card" href="https://studio.blender.org/training/blender-fundamentals-45-lts/" target="_blank" rel="noopener">
-      <span>Main lessons</span>
-      <strong>Blender Fundamentals 4.5 LTS</strong>
-      <p>Official Blender training path for learning the interface and core tools.</p>
-    </a>
-    
-    <a class="resource-card" href="https://docs.blender.org/manual/en/4.1/addons/mesh/3d_print_toolbox.html" target="_blank" rel="noopener">
-      <span>Print prep</span>
-      <strong>Blender 3D Print Toolbox Manual</strong>
-      <p>Used to check models for slicing and printability problems.</p>
-    </a>
-    
-    <a class="resource-card" href="https://help.prusa3d.com/article/first-print-with-prusaslicer_1753" target="_blank" rel="noopener">
-      <span>Slicer</span>
-      <strong>PrusaSlicer First Print Guide</strong>
-      <p>A clean beginner reference for importing models, slicing, and preparing prints.</p>
-    </a>
-    
-    <a class="resource-card" href="https://help.prusa3d.com/article/printer-handbooks_125045" target="_blank" rel="noopener">
-      <span>Printer</span>
-      <strong>Prusa Printer Handbooks</strong>
-      <p>Printer setup, calibration, maintenance, and troubleshooting reference.</p>
-    </a>
-    
-    <a class="resource-card" href="https://ultimaker.com/software/ultimaker-cura/" target="_blank" rel="noopener">
-      <span>Slicer option</span>
-      <strong>UltiMaker Cura</strong>
-      <p>Alternative slicer if your printer profile works better in Cura.</p>
-    </a>
-    
-    <a class="resource-card" href="https://www.autodesk.com/education/edu-software/fusion" target="_blank" rel="noopener">
-      <span>CAD add-on</span>
-      <strong>Autodesk Fusion Education Access</strong>
-      <p>Add later for exact measurements, functional parts, boxes, clips, hinges, and engineering style prints.</p>
-    </a>
-    
-    <a class="resource-card" href="https://science.nasa.gov/3d-resources/" target="_blank" rel="noopener">
-      <span>Inspiration</span>
-      <strong>NASA 3D Resources</strong>
-      <p>Free downloadable 3D models, including some printable space/science objects.</p>
-    </a>
-    
+      <a class="resource-card" href="https://www.blender.org/download/" target="_blank" rel="noopener">
+        <span>Core software</span>
+        <strong>Blender Download</strong>
+        <p>Install the main 3D modeling and sculpting tool.</p>
+      </a>
+
+      <a class="resource-card" href="https://docs.blender.org/manual/en/latest/index.html" target="_blank" rel="noopener">
+        <span>Official manual</span>
+        <strong>Blender Manual 5.1</strong>
+        <p>The public manual link used throughout the camp. This stays available on the hosted page.</p>
+      </a>
+
+      <a class="resource-card" href="https://www.youtube.com/watch?v=z-Xl9tGqH14" target="_blank" rel="noopener">
+        <span>Video spine</span>
+        <strong>Tutorial Video</strong>
+        <p>The 4 hour 19 minute tutorial gives the camp a guided backbone, not the whole course.</p>
+      </a>
+
+      <a class="resource-card" href="https://docs.blender.org/manual/en/latest/index.html" target="_blank" rel="noopener">
+        <span>Manual home</span>
+        <strong>Blender Manual 5.1</strong>
+        <p>Use this when a tool appears in a lesson and she wants the official reference.</p>
+      </a>
+
+      <a class="resource-card" href="https://docs.blender.org/manual/en/latest/editors/3dview/navigate/navigation.html" target="_blank" rel="noopener">
+        <span>Manual basics</span>
+        <strong>Viewport Navigation</strong>
+        <p>Orbit, pan, zoom, frame selected, and avoid getting lost in the viewport.</p>
+      </a>
+
+      <a class="resource-card" href="https://docs.blender.org/manual/en/latest/modeling/meshes/editing/introduction.html" target="_blank" rel="noopener">
+        <span>Manual modeling</span>
+        <strong>Mesh Editing</strong>
+        <p>Vertices, edges, faces, extrusions, loops, insets, and cleanup.</p>
+      </a>
+
+      <a class="resource-card" href="https://docs.blender.org/manual/en/latest/sculpt_paint/sculpting/introduction/general.html" target="_blank" rel="noopener">
+        <span>Manual sculpting</span>
+        <strong>Sculpting Overview</strong>
+        <p>Digital clay workflow, brush use, symmetry, remesh, and broad forms first.</p>
+      </a>
+
+      <a class="resource-card" href="https://docs.blender.org/manual/en/latest/render/materials/introduction.html" target="_blank" rel="noopener">
+        <span>Manual materials</span>
+        <strong>Materials</strong>
+        <p>Color, roughness, material slots, and surface presentation.</p>
+      </a>
+
+      <a class="resource-card" href="https://docs.blender.org/manual/en/latest/modeling/meshes/uv/unwrapping/introduction.html" target="_blank" rel="noopener">
+        <span>Manual UVs</span>
+        <strong>UV Unwrapping</strong>
+        <p>Flattening a 3D model so textures can land where expected.</p>
+      </a>
+
+      <a class="resource-card" href="https://extensions.blender.org/add-ons/print3d-toolbox/" target="_blank" rel="noopener">
+        <span>Print prep</span>
+        <strong>3D Print Toolbox Extension</strong>
+        <p>Official Blender Extensions page for the 3D Print Toolbox. Use this because the uploaded 5.1 manual package did not include a current toolbox page.</p>
+      </a>
+
+      <a class="resource-card" href="https://help.prusa3d.com/article/first-print-with-prusaslicer_1753" target="_blank" rel="noopener">
+        <span>Slicer</span>
+        <strong>PrusaSlicer First Print</strong>
+        <p>Beginner slicer flow for importing a model and preparing a print.</p>
+      </a>
+
+      <a class="resource-card" href="https://ultimaker.com/software/ultimaker-cura/" target="_blank" rel="noopener">
+        <span>Slicer option</span>
+        <strong>UltiMaker Cura</strong>
+        <p>Alternative slicer if your printer profile works better in Cura.</p>
+      </a>
+
+      <a class="resource-card" href="https://www.autodesk.com/education/edu-software/fusion" target="_blank" rel="noopener">
+        <span>CAD add-on</span>
+        <strong>Fusion Education</strong>
+        <p>Add later for exact functional parts, measurements, and engineering style prints.</p>
+      </a>
+
+      <a class="resource-card" href="https://science.nasa.gov/3d-resources/" target="_blank" rel="noopener">
+        <span>Inspiration</span>
+        <strong>NASA 3D Resources</strong>
+        <p>Free 3D models and space objects for inspiration or print ideas.</p>
+      </a>
     </div>
   </section>
 
   <section class="panel">
-    <h2>Camp Rules That Matter</h2>
+    <h2>Blender Manual Link Map</h2>
+    <p>These are the manual references tied directly into the weekly sessions. This makes the course deeper than a single video and gives her somewhere to look when she gets stuck.</p>
+    <div class="manual-map">
+      
+      <div class="manual-map-card">
+        <b>Setup and interface</b>
+        <div class="mini-links map-links"><a href="https://docs.blender.org/manual/en/latest/getting_started/installing/index.html" target="_blank" rel="noopener">Installing Blender</a><a href="https://docs.blender.org/manual/en/latest/interface/window_system/introduction.html" target="_blank" rel="noopener">Interface</a><a href="https://docs.blender.org/manual/en/latest/editors/3dview/introduction.html" target="_blank" rel="noopener">3D Viewport</a><a href="https://docs.blender.org/manual/en/latest/editors/3dview/navigate/navigation.html" target="_blank" rel="noopener">Viewport Navigation</a><a href="https://docs.blender.org/manual/en/latest/editors/3dview/navigate/viewpoint.html" target="_blank" rel="noopener">Viewpoints</a><a href="https://docs.blender.org/manual/en/latest/editors/3dview/modes.html" target="_blank" rel="noopener">Modes</a></div>
+      </div>
+
+      <div class="manual-map-card">
+        <b>Transform and object control</b>
+        <div class="mini-links map-links"><a href="https://docs.blender.org/manual/en/latest/scene_layout/object/editing/transform/introduction.html" target="_blank" rel="noopener">Object Transform</a><a href="https://docs.blender.org/manual/en/latest/scene_layout/object/editing/transform/move.html" target="_blank" rel="noopener">Move</a><a href="https://docs.blender.org/manual/en/latest/scene_layout/object/editing/transform/rotate.html" target="_blank" rel="noopener">Rotate</a><a href="https://docs.blender.org/manual/en/latest/scene_layout/object/editing/transform/scale.html" target="_blank" rel="noopener">Scale</a><a href="https://docs.blender.org/manual/en/latest/modeling/meshes/primitives.html" target="_blank" rel="noopener">Mesh Primitives</a></div>
+      </div>
+
+      <div class="manual-map-card">
+        <b>Mesh modeling</b>
+        <div class="mini-links map-links"><a href="https://docs.blender.org/manual/en/latest/modeling/meshes/editing/introduction.html" target="_blank" rel="noopener">Mesh Editing</a><a href="https://docs.blender.org/manual/en/latest/modeling/meshes/editing/mesh/extrude.html" target="_blank" rel="noopener">Extrude</a><a href="https://docs.blender.org/manual/en/latest/modeling/meshes/editing/edge/loopcut_slide.html" target="_blank" rel="noopener">Loop Cut</a><a href="https://docs.blender.org/manual/en/latest/modeling/meshes/editing/face/inset_faces.html" target="_blank" rel="noopener">Inset Faces</a><a href="https://docs.blender.org/manual/en/latest/modeling/meshes/editing/edge/bevel.html" target="_blank" rel="noopener">Bevel Edges</a><a href="https://docs.blender.org/manual/en/latest/modeling/meshes/editing/mesh/normals.html" target="_blank" rel="noopener">Normals</a><a href="https://docs.blender.org/manual/en/latest/modeling/meshes/editing/mesh/cleanup.html" target="_blank" rel="noopener">Clean Up</a></div>
+      </div>
+
+      <div class="manual-map-card">
+        <b>Modifiers</b>
+        <div class="mini-links map-links"><a href="https://docs.blender.org/manual/en/latest/modeling/modifiers/introduction.html" target="_blank" rel="noopener">Modifiers Intro</a><a href="https://docs.blender.org/manual/en/latest/modeling/modifiers/generate/solidify.html" target="_blank" rel="noopener">Solidify Modifier</a><a href="https://docs.blender.org/manual/en/latest/modeling/modifiers/generate/subdivision_surface.html" target="_blank" rel="noopener">Subdivision Surface</a><a href="https://docs.blender.org/manual/en/latest/modeling/modifiers/generate/bevel.html" target="_blank" rel="noopener">Bevel Modifier</a><a href="https://docs.blender.org/manual/en/latest/modeling/modifiers/generate/booleans.html" target="_blank" rel="noopener">Boolean Modifier</a><a href="https://docs.blender.org/manual/en/latest/modeling/modifiers/generate/remesh.html" target="_blank" rel="noopener">Remesh Modifier</a></div>
+      </div>
+
+      <div class="manual-map-card">
+        <b>Sculpting</b>
+        <div class="mini-links map-links"><a href="https://docs.blender.org/manual/en/latest/sculpt_paint/sculpting/introduction/general.html" target="_blank" rel="noopener">Sculpting Overview</a><a href="https://docs.blender.org/manual/en/latest/sculpt_paint/sculpting/brushes/index.html" target="_blank" rel="noopener">Sculpt Brushes</a><a href="https://docs.blender.org/manual/en/latest/sculpt_paint/sculpting/tool_settings/symmetry.html" target="_blank" rel="noopener">Sculpt Symmetry</a><a href="https://docs.blender.org/manual/en/latest/sculpt_paint/sculpting/tool_settings/remesh.html" target="_blank" rel="noopener">Sculpt Remesh</a></div>
+      </div>
+
+      <div class="manual-map-card">
+        <b>Materials and UVs</b>
+        <div class="mini-links map-links"><a href="https://docs.blender.org/manual/en/latest/render/materials/introduction.html" target="_blank" rel="noopener">Materials</a><a href="https://docs.blender.org/manual/en/latest/render/shader_nodes/introduction.html" target="_blank" rel="noopener">Shader Nodes</a><a href="https://docs.blender.org/manual/en/latest/modeling/meshes/uv/index.html" target="_blank" rel="noopener">UV Intro</a><a href="https://docs.blender.org/manual/en/latest/modeling/meshes/uv/unwrapping/introduction.html" target="_blank" rel="noopener">UV Unwrapping</a><a href="https://docs.blender.org/manual/en/latest/modeling/meshes/uv/unwrapping/seams.html" target="_blank" rel="noopener">UV Seams</a></div>
+      </div>
+
+      <div class="manual-map-card">
+        <b>Presentation</b>
+        <div class="mini-links map-links"><a href="https://docs.blender.org/manual/en/latest/editors/3dview/navigate/camera_view.html" target="_blank" rel="noopener">Camera View</a><a href="https://docs.blender.org/manual/en/latest/render/lights/index.html" target="_blank" rel="noopener">Lights</a><a href="https://docs.blender.org/manual/en/latest/render/eevee/introduction.html" target="_blank" rel="noopener">Eevee</a><a href="https://docs.blender.org/manual/en/latest/render/cycles/introduction.html" target="_blank" rel="noopener">Cycles</a><a href="https://docs.blender.org/manual/en/latest/render/color_management/index.html" target="_blank" rel="noopener">Color Management</a><a href="https://docs.blender.org/manual/en/latest/render/output/introduction.html" target="_blank" rel="noopener">Output</a></div>
+      </div>
+
+      <div class="manual-map-card">
+        <b>3D printing</b>
+        <div class="mini-links map-links"><a href="https://docs.blender.org/manual/en/latest/editors/preferences/addons.html" target="_blank" rel="noopener">Add-ons</a><a href="https://extensions.blender.org/add-ons/print3d-toolbox/" target="_blank" rel="noopener">3D Print Toolbox Extension</a><a href="https://help.prusa3d.com/article/first-print-with-prusaslicer_1753" target="_blank" rel="noopener">PrusaSlicer First Print</a><a href="https://ultimaker.com/software/ultimaker-cura/" target="_blank" rel="noopener">UltiMaker Cura</a><a href="https://help.prusa3d.com/article/printer-handbooks_125045" target="_blank" rel="noopener">Prusa Handbooks</a></div>
+      </div>
+    </div>
+  </section>
+
+  <section class="panel video-note">
+    <h2>Video Spine, Not Video Prison</h2>
+    <p>The Beginner Blender Tutorial is used as a guided sequence, but the camp agenda expands it into 46 sessions. The goal is to learn tools, then immediately use them on printable, sculptural, or personal projects.</p>
+    <div class="resource-row">
+      <a class="resource-pill" href="https://www.youtube.com/watch?v=z-Xl9tGqH14" target="_blank" rel="noopener"><span>Main video</span>Tutorial Video</a>
+      <a class="resource-pill" href="https://docs.blender.org/manual/en/latest/index.html" target="_blank" rel="noopener"><span>Manual</span>Blender Manual 5.1</a>
+      <a class="resource-pill" href="https://extensions.blender.org/add-ons/print3d-toolbox/" target="_blank" rel="noopener"><span>Print prep</span>3D Print Toolbox Extension</a>
+    </div>
     <table class="software-table">
-      <tr><th>Rule</th><th>Why it matters</th></tr>
-      <tr><td>One new tool per day</td><td>Blender gets overwhelming when a beginner tries everything at once.</td></tr>
-      <tr><td>Big shapes before details</td><td>Good sculpture starts with silhouette and proportion.</td></tr>
-      <tr><td>Save versions</td><td>Use filenames like creature_v01.blend, creature_v02.blend, final_export.stl.</td></tr>
-      <tr><td>Print small first</td><td>Prototype prints reveal weak parts before wasting hours and filament.</td></tr>
-      <tr><td>Keep a print log</td><td>Every failed print becomes useful if she records what happened.</td></tr>
-      <tr><td>Vacation is protected</td><td>May 28 through June 5 has no required lessons. Optional inspiration notes are fine, but no make-up work is required.</td></tr>
+      <tr><th>Video chapter</th><th>Time range</th><th>What it supports in camp</th></tr>
+      
+      <tr>
+        <td><strong>Chapter 1</strong><br>Part 1: The Basics</td>
+        <td>0:00 to 28:18</td>
+        <td>Setup, viewport navigation, primitives, shade smooth, modes, vertices, edges, faces, solidify, subdivision, loop cuts, inset, versioned saves.</td>
+      </tr>
+
+      <tr>
+        <td><strong>Chapter 2</strong><br>Part 2: Basic Modeling</td>
+        <td>28:18 to 59:07</td>
+        <td>Reference images, orthographic views, scaling to reference, edge rings, extrusions, face creation, handle geometry, topology fixes.</td>
+      </tr>
+
+      <tr>
+        <td><strong>Chapter 3</strong><br>Part 3: Organic Modeling</td>
+        <td>59:07 to 1:30:15</td>
+        <td>Organizing the scene, shaping organic forms, less perfect surfaces, icing style deformation, broad form control.</td>
+      </tr>
+
+      <tr>
+        <td><strong>Chapter 4</strong><br>Part 4: Materials</td>
+        <td>1:30:15 to 2:03:48</td>
+        <td>Basic materials, color, roughness, object separation, simple surfaces, making models look readable.</td>
+      </tr>
+
+      <tr>
+        <td><strong>Chapter 5</strong><br>Part 5: Texturing</td>
+        <td>2:03:48 to 2:35:42</td>
+        <td>Texture setup, procedural and image texture thinking, visual detail, using texture to support form.</td>
+      </tr>
+
+      <tr>
+        <td><strong>Chapter 6</strong><br>Part 6: UV Unwrapping</td>
+        <td>2:35:42 to 3:09:28</td>
+        <td>UV basics, unwrap thinking, seams, applying textures to more complex objects.</td>
+      </tr>
+
+      <tr>
+        <td><strong>Chapter 7</strong><br>Part 7: Scattering</td>
+        <td>3:09:28 to 3:46:13</td>
+        <td>Scatter on surfaces workflow, small repeated objects, scale variation, density and placement control.</td>
+      </tr>
+
+      <tr>
+        <td><strong>Chapter 8</strong><br>Part 8: Lighting and Rendering</td>
+        <td>3:46:13 to 4:19:03</td>
+        <td>Lights, camera, composition, Eevee vs Cycles, render settings, presentation image.</td>
+      </tr>
     </table>
   </section>
 
   
-
     <section class="week page-break">
       <div class="week-header">
         <div>
-          <p class="eyebrow">Launch | May 14-15</p>
-          <h2>Set Up the Studio</h2>
+          <p class="eyebrow">Launch Block | May 14 to May 15</p>
+          <h2>Set Up the Studio and Learn the Map</h2>
         </div>
-        <span class="week-badge">2 days</span>
+        <span class="week-badge">2 camp days</span>
       </div>
       <div class="week-summary">
-        <div><b>Goal</b><p>Build the camp workspace, install tools, make one tiny first object, and print or slice a known-good model.</p></div>
-        <div><b>Deliverable</b><p>A named project folder, a first .blend file, and one baseline print or sliced model.</p></div>
-        <div><b>Skills</b><ul><li>Install and organize</li><li>Mouse and viewport movement</li><li>Save/export habits</li><li>Printer safety</li></ul></div>
+        <div><b>Goal</b><p>Make the first two days about confidence, safety, file habits, and not being scared of Blender.</p></div>
+        <div><b>Deliverable</b><p>A clean project folder, installed software, one saved Blender file, one screenshot, and a tiny starter object.</p></div>
+        <div><b>Skills</b><ul><li>Install and setup</li><li>File folders</li><li>Basic navigation</li><li>Save versions</li><li>Parent safety rules</li></ul></div>
       </div>
-      <div class="resource-row"><a class="resource-pill" href="https://www.blender.org/download/" target="_blank" rel="noopener"><span>Core software</span>Blender Download</a><a class="resource-pill" href="https://studio.blender.org/training/blender-fundamentals-45-lts/" target="_blank" rel="noopener"><span>Main lessons</span>Blender Fundamentals 4.5 LTS</a><a class="resource-pill" href="https://science.nasa.gov/3d-resources/" target="_blank" rel="noopener"><span>Inspiration</span>NASA 3D Resources</a></div>
+      <div class="resource-row"><a class="resource-pill" href="https://www.blender.org/download/" target="_blank" rel="noopener"><span>Resource</span>Blender Download</a><a class="resource-pill" href="https://docs.blender.org/manual/en/latest/getting_started/installing/index.html" target="_blank" rel="noopener"><span>Resource</span>Installing Blender</a><a class="resource-pill" href="https://docs.blender.org/manual/en/latest/interface/window_system/introduction.html" target="_blank" rel="noopener"><span>Resource</span>Interface</a><a class="resource-pill" href="https://docs.blender.org/manual/en/latest/editors/3dview/introduction.html" target="_blank" rel="noopener"><span>Resource</span>3D Viewport</a><a class="resource-pill" href="https://docs.blender.org/manual/en/latest/editors/3dview/navigate/navigation.html" target="_blank" rel="noopener"><span>Resource</span>Viewport Navigation</a></div>
       <div class="days">
-        <article class="day-card">
+        
+        <article class="day-card" id="session-1">
           <div class="day-top">
             <label class="checkline">
               <input type="checkbox" id="day1" data-camp-check>
               <span class="fake-check"></span>
               <span>
                 <strong>Thu May 14</strong>
-                <em>Studio Setup</em>
+                <em>Studio Setup and Safety</em>
               </span>
             </label>
           </div>
           <div class="day-grid">
-            <div><b>Learn</b><p>Install Blender. Create a Summer 3D Camp folder with subfolders: Blender Files, STL Exports, Slicer Files, Photos, Finished Prints.</p></div>
-            <div><b>Build</b><p>Open Blender, delete the cube, add a sphere and cylinder, move them around, save as 001_first_scene.blend.</p></div>
-            <div><b>Done when</b><p>She can open Blender, move around the scene, and save a file without help.</p></div>
+            <div><b>Learn</b><p>Install Blender, create a Summer 3D Camp folder, make subfolders for Blender files, exports, slicer files, photos, references, and final prints. Watch only the opening setup part of the video.</p></div>
+            <div><b>Build</b><p>Open Blender, close the splash screen, save a blank file as camp_start_001.blend, and take a screenshot of the startup scene.</p></div>
+            <div><b>Done when</b><p>The computer, mouse, folder system, and first saved file are ready.</p></div>
+            <div><b>Reference</b><p>Read the Installing Blender and Interface manual pages with a parent. Keep this light.</p><p class="mini-links"><a href="https://docs.blender.org/manual/en/latest/getting_started/installing/index.html" target="_blank" rel="noopener">Installing Blender</a><a href="https://docs.blender.org/manual/en/latest/interface/window_system/introduction.html" target="_blank" rel="noopener">Interface</a></p></div>
           </div>
           <label class="notes-label" for="notes1">Camp notes</label>
           <textarea id="notes1" data-camp-note placeholder="What did she make, fix, learn, or want to try next?"></textarea>
         </article>
-        <article class="day-card">
+        <article class="day-card" id="session-2">
           <div class="day-top">
             <label class="checkline">
               <input type="checkbox" id="day2" data-camp-check>
               <span class="fake-check"></span>
               <span>
                 <strong>Fri May 15</strong>
-                <em>First Print Baseline</em>
+                <em>First Shape Lab</em>
               </span>
             </label>
           </div>
           <div class="day-grid">
-            <div><b>Learn</b><p>Download one simple NASA model or use a known printer test model. Parent handles slicer and printer setup.</p></div>
-            <div><b>Build</b><p>Slice one model together. Talk through layer height, supports, infill, and print time.</p></div>
-            <div><b>Done when</b><p>She understands that modeling and printing are separate steps.</p></div>
+            <div><b>Learn</b><p>Learn orbit, pan, zoom, frame selected, add, delete, move, scale, and rotate. Video target is Chapter 1 from 1:26 to about 6:00.</p></div>
+            <div><b>Build</b><p>Make a silly sculpture from only cubes, spheres, cylinders, and a torus. Name every object in the outliner.</p></div>
+            <div><b>Done when</b><p>She can move around Blender, add objects, delete objects, and save a numbered version.</p></div>
+            <div><b>Reference</b><p>Use the 3D Viewport, Viewport Navigation, Object Transform, and Mesh Primitives manual pages.</p><p class="mini-links"><a href="https://docs.blender.org/manual/en/latest/editors/3dview/introduction.html" target="_blank" rel="noopener">3D Viewport</a><a href="https://docs.blender.org/manual/en/latest/editors/3dview/navigate/navigation.html" target="_blank" rel="noopener">Viewport Navigation</a><a href="https://docs.blender.org/manual/en/latest/scene_layout/object/editing/transform/introduction.html" target="_blank" rel="noopener">Object Transform</a><a href="https://docs.blender.org/manual/en/latest/modeling/meshes/primitives.html" target="_blank" rel="noopener">Mesh Primitives</a></p></div>
           </div>
           <label class="notes-label" for="notes2">Camp notes</label>
           <textarea id="notes2" data-camp-note placeholder="What did she make, fix, learn, or want to try next?"></textarea>
         </article>
       </div>
     </section>
-    
-
     <section class="week page-break">
       <div class="week-header">
         <div>
-          <p class="eyebrow">Week 1 | May 18-22</p>
-          <h2>Blender Foundations</h2>
+          <p class="eyebrow">Week 1 | May 18 to May 22</p>
+          <h2>Blender Foundations Without Babying It</h2>
         </div>
-        <span class="week-badge">5 days</span>
+        <span class="week-badge">5 camp days</span>
       </div>
       <div class="week-summary">
-        <div><b>Goal</b><p>Learn the core controls without drowning in features.</p></div>
-        <div><b>Deliverable</b><p>A simple printable charm, token, or nameplate.</p></div>
-        <div><b>Skills</b><ul><li>Viewport navigation</li><li>Object mode vs. edit mode</li><li>Move/scale/rotate</li><li>Bevels and clean edges</li></ul></div>
+        <div><b>Goal</b><p>Build real Blender habits: navigation, modes, mesh parts, transforms, modifiers, and first printable thinking.</p></div>
+        <div><b>Deliverable</b><p>A small printable charm, nameplate, desk token, or creature base exported as STL.</p></div>
+        <div><b>Skills</b><ul><li>Object mode</li><li>Edit mode</li><li>Mesh parts</li><li>Extrude</li><li>Bevel</li><li>Modifiers</li><li>STL export thinking</li></ul></div>
       </div>
-      <div class="resource-row"><a class="resource-pill" href="https://studio.blender.org/training/blender-fundamentals-45-lts/" target="_blank" rel="noopener"><span>Main lessons</span>Blender Fundamentals 4.5 LTS</a></div>
+      <div class="resource-row"><a class="resource-pill" href="https://docs.blender.org/manual/en/latest/editors/3dview/modes.html" target="_blank" rel="noopener"><span>Resource</span>Modes</a><a class="resource-pill" href="https://docs.blender.org/manual/en/latest/scene_layout/object/editing/transform/introduction.html" target="_blank" rel="noopener"><span>Resource</span>Object Transform</a><a class="resource-pill" href="https://docs.blender.org/manual/en/latest/modeling/meshes/editing/introduction.html" target="_blank" rel="noopener"><span>Resource</span>Mesh Editing</a><a class="resource-pill" href="https://docs.blender.org/manual/en/latest/modeling/meshes/editing/mesh/extrude.html" target="_blank" rel="noopener"><span>Resource</span>Extrude</a><a class="resource-pill" href="https://docs.blender.org/manual/en/latest/modeling/modifiers/generate/bevel.html" target="_blank" rel="noopener"><span>Resource</span>Bevel Modifier</a><a class="resource-pill" href="https://docs.blender.org/manual/en/latest/modeling/modifiers/generate/solidify.html" target="_blank" rel="noopener"><span>Resource</span>Solidify Modifier</a><a class="resource-pill" href="https://docs.blender.org/manual/en/latest/modeling/modifiers/generate/subdivision_surface.html" target="_blank" rel="noopener"><span>Resource</span>Subdivision Surface</a></div>
       <div class="days">
-        <article class="day-card">
+        
+        <article class="day-card" id="session-3">
           <div class="day-top">
             <label class="checkline">
               <input type="checkbox" id="day3" data-camp-check>
@@ -771,33 +780,35 @@
             </label>
           </div>
           <div class="day-grid">
-            <div><b>Learn</b><p>Practice orbit, pan, zoom, frame selected, and save versions.</p></div>
-            <div><b>Build</b><p>Create a simple scene with five shapes arranged intentionally.</p></div>
-            <div><b>Done when</b><p>She can move around the view without getting lost.</p></div>
+            <div><b>Learn</b><p>Practice orbit, pan, zoom, viewpoint buttons, frame selected, and numerical transforms. Video target is Chapter 1 navigation and hotkeys.</p></div>
+            <div><b>Build</b><p>Build a five object scene where each object is placed on purpose. Then make three saved versions.</p></div>
+            <div><b>Done when</b><p>She can recover when she gets lost in the view and can explain X, Y, and Z.</p></div>
+            <div><b>Reference</b><p>Read Viewport Navigation and Viewpoints.</p><p class="mini-links"><a href="https://docs.blender.org/manual/en/latest/editors/3dview/navigate/navigation.html" target="_blank" rel="noopener">Viewport Navigation</a><a href="https://docs.blender.org/manual/en/latest/editors/3dview/navigate/viewpoint.html" target="_blank" rel="noopener">Viewpoints</a></p></div>
           </div>
           <label class="notes-label" for="notes3">Camp notes</label>
           <textarea id="notes3" data-camp-note placeholder="What did she make, fix, learn, or want to try next?"></textarea>
         </article>
-        <article class="day-card">
+        <article class="day-card" id="session-4">
           <div class="day-top">
             <label class="checkline">
               <input type="checkbox" id="day4" data-camp-check>
               <span class="fake-check"></span>
               <span>
                 <strong>Tue May 19</strong>
-                <em>Object Mode Basics</em>
+                <em>Object Mode Control</em>
               </span>
             </label>
           </div>
           <div class="day-grid">
-            <div><b>Learn</b><p>Use add, delete, duplicate, move, scale, and rotate.</p></div>
-            <div><b>Build</b><p>Build a tiny robot, snowman, or tower from basic shapes.</p></div>
-            <div><b>Done when</b><p>She can build with primitives instead of only watching you do it.</p></div>
+            <div><b>Learn</b><p>Use add, duplicate, delete, move, rotate, scale, shade smooth, and naming. Keep the tutorial paused often.</p></div>
+            <div><b>Build</b><p>Make a tiny robot, snowman, tower, or animal from primitives. Build three variations instead of one perfect version.</p></div>
+            <div><b>Done when</b><p>She can use G, R, S, delete, duplicate, and save without you taking over.</p></div>
+            <div><b>Reference</b><p>Read Object Transform, Move, Rotate, Scale, and Mesh Primitives.</p><p class="mini-links"><a href="https://docs.blender.org/manual/en/latest/scene_layout/object/editing/transform/introduction.html" target="_blank" rel="noopener">Object Transform</a><a href="https://docs.blender.org/manual/en/latest/scene_layout/object/editing/transform/move.html" target="_blank" rel="noopener">Move</a><a href="https://docs.blender.org/manual/en/latest/scene_layout/object/editing/transform/rotate.html" target="_blank" rel="noopener">Rotate</a><a href="https://docs.blender.org/manual/en/latest/scene_layout/object/editing/transform/scale.html" target="_blank" rel="noopener">Scale</a><a href="https://docs.blender.org/manual/en/latest/modeling/meshes/primitives.html" target="_blank" rel="noopener">Mesh Primitives</a></p></div>
           </div>
           <label class="notes-label" for="notes4">Camp notes</label>
           <textarea id="notes4" data-camp-note placeholder="What did she make, fix, learn, or want to try next?"></textarea>
         </article>
-        <article class="day-card">
+        <article class="day-card" id="session-5">
           <div class="day-top">
             <label class="checkline">
               <input type="checkbox" id="day5" data-camp-check>
@@ -809,71 +820,73 @@
             </label>
           </div>
           <div class="day-grid">
-            <div><b>Learn</b><p>Learn vertices, edges, faces, extrude, and proportional thinking.</p></div>
-            <div><b>Build</b><p>Turn a cube into a simple house, crystal, or stylized rock.</p></div>
-            <div><b>Done when</b><p>She understands that models are made from editable geometry.</p></div>
+            <div><b>Learn</b><p>Learn vertices, edges, faces, object mode vs edit mode, and selection modes. Watch the cylinder and mug setup section from Chapter 1.</p></div>
+            <div><b>Build</b><p>Turn a cube into a simple house, crystal, shield, rock, or toy prop by editing geometry.</p></div>
+            <div><b>Done when</b><p>She can point to a vertex, edge, and face, then switch modes intentionally.</p></div>
+            <div><b>Reference</b><p>Read Modes and Mesh Editing.</p><p class="mini-links"><a href="https://docs.blender.org/manual/en/latest/editors/3dview/modes.html" target="_blank" rel="noopener">Modes</a><a href="https://docs.blender.org/manual/en/latest/modeling/meshes/editing/introduction.html" target="_blank" rel="noopener">Mesh Editing</a></p></div>
           </div>
           <label class="notes-label" for="notes5">Camp notes</label>
           <textarea id="notes5" data-camp-note placeholder="What did she make, fix, learn, or want to try next?"></textarea>
         </article>
-        <article class="day-card">
+        <article class="day-card" id="session-6">
           <div class="day-top">
             <label class="checkline">
               <input type="checkbox" id="day6" data-camp-check>
               <span class="fake-check"></span>
               <span>
                 <strong>Thu May 21</strong>
-                <em>Bevel and Smooth</em>
+                <em>Extrude, Inset, and Loops</em>
               </span>
             </label>
           </div>
           <div class="day-grid">
-            <div><b>Learn</b><p>Use bevel modifier, shade smooth, and simple edge cleanup.</p></div>
-            <div><b>Build</b><p>Round the edges of yesterday's model and make it look more finished.</p></div>
-            <div><b>Done when</b><p>She can improve a model instead of starting over.</p></div>
+            <div><b>Learn</b><p>Learn E for extrude, I for inset, Ctrl R for loop cut, and how extra geometry controls shape.</p></div>
+            <div><b>Build</b><p>Make a simple cup, planter, treasure chest, or game token with thickness and clean edges.</p></div>
+            <div><b>Done when</b><p>The model has intentional thickness, no paper thin walls, and at least one loop cut or inset.</p></div>
+            <div><b>Reference</b><p>Read Extrude, Loop Cut, Inset Faces, Solidify Modifier.</p><p class="mini-links"><a href="https://docs.blender.org/manual/en/latest/modeling/meshes/editing/mesh/extrude.html" target="_blank" rel="noopener">Extrude</a><a href="https://docs.blender.org/manual/en/latest/modeling/meshes/editing/edge/loopcut_slide.html" target="_blank" rel="noopener">Loop Cut</a><a href="https://docs.blender.org/manual/en/latest/modeling/meshes/editing/face/inset_faces.html" target="_blank" rel="noopener">Inset Faces</a><a href="https://docs.blender.org/manual/en/latest/modeling/modifiers/generate/solidify.html" target="_blank" rel="noopener">Solidify Modifier</a></p></div>
           </div>
           <label class="notes-label" for="notes6">Camp notes</label>
           <textarea id="notes6" data-camp-note placeholder="What did she make, fix, learn, or want to try next?"></textarea>
         </article>
-        <article class="day-card">
+        <article class="day-card" id="session-7">
           <div class="day-top">
             <label class="checkline">
               <input type="checkbox" id="day7" data-camp-check>
               <span class="fake-check"></span>
               <span>
                 <strong>Fri May 22</strong>
-                <em>Mini Project Friday</em>
+                <em>First Printable Mini Project</em>
               </span>
             </label>
           </div>
           <div class="day-grid">
-            <div><b>Learn</b><p>Combine the week’s tools into one small original object.</p></div>
-            <div><b>Build</b><p>Make a nameplate, desk token, simple charm, or tiny creature base. Export STL with parent help.</p></div>
-            <div><b>Done when</b><p>One small object is ready to slice or print.</p></div>
+            <div><b>Learn</b><p>Learn bevels, shade smooth, subdivision, and when a pretty render shape may not print well.</p></div>
+            <div><b>Build</b><p>Make a nameplate, backpack charm, desk token, or creature base. Export STL with parent help and inspect in slicer.</p></div>
+            <div><b>Done when</b><p>One small object is ready to slice or print as a test.</p></div>
+            <div><b>Reference</b><p>Read Bevel Modifier, Subdivision Surface, and PrusaSlicer First Print.</p><p class="mini-links"><a href="https://docs.blender.org/manual/en/latest/modeling/modifiers/generate/bevel.html" target="_blank" rel="noopener">Bevel Modifier</a><a href="https://docs.blender.org/manual/en/latest/modeling/modifiers/generate/subdivision_surface.html" target="_blank" rel="noopener">Subdivision Surface</a><a href="https://help.prusa3d.com/article/first-print-with-prusaslicer_1753" target="_blank" rel="noopener">PrusaSlicer First Print</a></p></div>
           </div>
           <label class="notes-label" for="notes7">Camp notes</label>
           <textarea id="notes7" data-camp-note placeholder="What did she make, fix, learn, or want to try next?"></textarea>
         </article>
       </div>
     </section>
-    
-
     <section class="week page-break">
       <div class="week-header">
         <div>
-          <p class="eyebrow">Week 2 | May 25-27</p>
-          <h2>Low-Poly Creature Sprint</h2>
+          <p class="eyebrow">Week 2 | May 25 to May 27</p>
+          <h2>Low Poly Creature Sprint Before Vacation</h2>
         </div>
         <span class="week-badge">3 camp days</span>
       </div>
       <div class="week-summary">
-        <div><b>Goal</b><p>Use the short pre-vacation week to start a character without forcing work during the trip.</p></div>
-        <div><b>Deliverable</b><p>A blocked-out low-poly animal, monster, or fantasy creature saved safely before vacation.</p></div>
-        <div><b>Skills</b><ul><li>Primitive modeling</li><li>Silhouette</li><li>Symmetry</li><li>Simple character design</li></ul></div>
+        <div><b>Goal</b><p>Use the short week to start an original character without making vacation feel like homework.</p></div>
+        <div><b>Deliverable</b><p>A blocked out low poly animal, monster, or fantasy creature saved safely before the trip.</p></div>
+        <div><b>Skills</b><ul><li>Reference use</li><li>Silhouette</li><li>Primitive modeling</li><li>Simple topology</li><li>Version control</li></ul></div>
       </div>
-      <div class="resource-row"><a class="resource-pill" href="https://studio.blender.org/training/blender-fundamentals-45-lts/" target="_blank" rel="noopener"><span>Main lessons</span>Blender Fundamentals 4.5 LTS</a></div>
+      <div class="resource-row"><a class="resource-pill" href="https://www.youtube.com/watch?v=z-Xl9tGqH14" target="_blank" rel="noopener"><span>Resource</span>Tutorial Video</a><a class="resource-pill" href="https://docs.blender.org/manual/en/latest/modeling/meshes/primitives.html" target="_blank" rel="noopener"><span>Resource</span>Mesh Primitives</a><a class="resource-pill" href="https://docs.blender.org/manual/en/latest/modeling/meshes/editing/introduction.html" target="_blank" rel="noopener"><span>Resource</span>Mesh Editing</a><a class="resource-pill" href="https://docs.blender.org/manual/en/latest/scene_layout/object/editing/transform/introduction.html" target="_blank" rel="noopener"><span>Resource</span>Object Transform</a></div>
       <div class="days">
-        <article class="day-card">
+        
+        <article class="day-card" id="session-8">
           <div class="day-top">
             <label class="checkline">
               <input type="checkbox" id="day8" data-camp-check>
@@ -885,14 +898,15 @@
             </label>
           </div>
           <div class="day-grid">
-            <div><b>Learn</b><p>Holiday-light session: sketch 3 creature ideas on paper. Pick one made from simple shapes.</p></div>
-            <div><b>Build</b><p>Block the body, head, legs, and tail in Blender using primitives.</p></div>
-            <div><b>Done when</b><p>The model reads clearly from far away.</p></div>
+            <div><b>Learn</b><p>Learn why references matter. Watch Chapter 2 from 28:18 to about 32:30, then collect 3 reference images or draw 3 silhouette sketches.</p></div>
+            <div><b>Build</b><p>Block the creature body with simple primitives: body, head, legs, tail, wings, horns, shell, or ears.</p></div>
+            <div><b>Done when</b><p>The creature reads clearly from far away as one chosen idea.</p></div>
+            <div><b>Reference</b><p>Read Mesh Primitives and Object Transform.</p><p class="mini-links"><a href="https://www.youtube.com/watch?v=z-Xl9tGqH14" target="_blank" rel="noopener">Tutorial Video</a><a href="https://docs.blender.org/manual/en/latest/modeling/meshes/primitives.html" target="_blank" rel="noopener">Mesh Primitives</a><a href="https://docs.blender.org/manual/en/latest/scene_layout/object/editing/transform/introduction.html" target="_blank" rel="noopener">Object Transform</a></p></div>
           </div>
           <label class="notes-label" for="notes8">Camp notes</label>
           <textarea id="notes8" data-camp-note placeholder="What did she make, fix, learn, or want to try next?"></textarea>
         </article>
-        <article class="day-card">
+        <article class="day-card" id="session-9">
           <div class="day-top">
             <label class="checkline">
               <input type="checkbox" id="day9" data-camp-check>
@@ -904,14 +918,15 @@
             </label>
           </div>
           <div class="day-grid">
-            <div><b>Learn</b><p>Add eyes, ears, horns, teeth, wings, or accessories.</p></div>
-            <div><b>Build</b><p>Make 3 versions of the face and pick the best one.</p></div>
-            <div><b>Done when</b><p>The creature has personality.</p></div>
+            <div><b>Learn</b><p>Learn how small shape choices change personality: eyes, eyebrows, mouth, horns, ears, feet, posture.</p></div>
+            <div><b>Build</b><p>Make three face versions, pick the strongest, and save the others in a backup collection.</p></div>
+            <div><b>Done when</b><p>The creature has personality, not just a body.</p></div>
+            <div><b>Reference</b><p>Read Mesh Editing and Bevel Edges.</p><p class="mini-links"><a href="https://docs.blender.org/manual/en/latest/modeling/meshes/editing/introduction.html" target="_blank" rel="noopener">Mesh Editing</a><a href="https://docs.blender.org/manual/en/latest/modeling/meshes/editing/edge/bevel.html" target="_blank" rel="noopener">Bevel Edges</a></p></div>
           </div>
           <label class="notes-label" for="notes9">Camp notes</label>
           <textarea id="notes9" data-camp-note placeholder="What did she make, fix, learn, or want to try next?"></textarea>
         </article>
-        <article class="day-card">
+        <article class="day-card" id="session-10">
           <div class="day-top">
             <label class="checkline">
               <input type="checkbox" id="day10" data-camp-check>
@@ -923,904 +938,913 @@
             </label>
           </div>
           <div class="day-grid">
-            <div><b>Learn</b><p>Clean the file, name the parts, save creature_v01.blend and creature_v02_backup.blend.</p></div>
-            <div><b>Build</b><p>Take a screenshot and write one note about what she wants to finish after vacation.</p></div>
-            <div><b>Done when</b><p>The project can pause cleanly without losing momentum.</p></div>
+            <div><b>Learn</b><p>Learn how to pause a project properly. Clean names, save creature_v01.blend and creature_v02_backup.blend, and write next steps.</p></div>
+            <div><b>Build</b><p>Take screenshots from front, side, and perspective view. Add a note: what to improve after vacation.</p></div>
+            <div><b>Done when</b><p>The project can pause for the trip without losing momentum.</p></div>
+            <div><b>Reference</b><p>Read Clean Up and Normals as a light preview.</p><p class="mini-links"><a href="https://docs.blender.org/manual/en/latest/modeling/meshes/editing/mesh/cleanup.html" target="_blank" rel="noopener">Clean Up</a><a href="https://docs.blender.org/manual/en/latest/modeling/meshes/editing/mesh/normals.html" target="_blank" rel="noopener">Normals</a></p></div>
           </div>
           <label class="notes-label" for="notes10">Camp notes</label>
           <textarea id="notes10" data-camp-note placeholder="What did she make, fix, learn, or want to try next?"></textarea>
         </article>
       </div>
     </section>
-    
-
     <section class="week page-break vacation-week">
       <div class="week-header">
         <div>
-          <p class="eyebrow">Vacation Break | May 28-June 5</p>
+          <p class="eyebrow">Vacation Break | May 28 to June 5</p>
           <h2>No Required Camp Sessions</h2>
         </div>
         <span class="week-badge">7 weekdays off</span>
       </div>
       <div class="week-summary">
-        <div><b>Goal</b><p>Protect the vacation. No required Blender, slicing, or printing work during this stretch.</p></div>
-        <div><b>Optional</b><p>Use the trip as inspiration only: notice shapes, textures, buildings, animals, toys, signs, shells, rocks, or museum objects that could become future models.</p></div>
-        <div><b>Return plan</b><p>On June 8, she resumes with digital clay sculpting. Nothing needs to be made up before then.</p></div>
+        <div><b>Goal</b><p>Protect vacation. The camp should not become a chore.</p></div>
+        <div><b>Optional only</b><p>Optional photo references only.</p></div>
+        <div><b>Look for</b><ul><li>Observation</li><li>Texture hunting</li><li>Silhouette spotting</li></ul></div>
       </div>
-      <div class="resource-row"><a class="resource-pill" href="https://science.nasa.gov/3d-resources/" target="_blank" rel="noopener"><span>Inspiration</span>NASA 3D Resources</a><a class="resource-pill" href="https://studio.blender.org/training/blender-fundamentals-45-lts/" target="_blank" rel="noopener"><span>Main lessons</span>Blender Fundamentals 4.5 LTS</a></div>
-      <div class="days">
-        <article class="day-card">
-          <div class="day-top">
-            <label class="checkline">
-              <span class="fake-check"></span>
-              <span>
-                <strong>Vacation idea bank</strong>
-                <em>Optional, no required checklist</em>
-              </span>
-            </label>
-          </div>
-          <div class="day-grid">
-            <div><b>Look for</b><p>3 interesting silhouettes, 3 surface textures, and 3 objects that could become printable models.</p></div>
-            <div><b>Capture</b><p>Take photos or make quick sketches only if it feels fun. Do not turn vacation into homework.</p></div>
-            <div><b>Use later</b><p>Bring one idea back for the June 8 sculpting week or the July personal project.</p></div>
-          </div>
-          <label class="notes-label" for="vacationNotes">Vacation inspiration notes</label>
-          <textarea id="vacationNotes" data-camp-note placeholder="Optional ideas from vacation: shapes, creatures, buildings, textures, objects, colors..."></textarea>
-        </article>
+      <div class="resource-row"><a class="resource-pill" href="https://science.nasa.gov/3d-resources/" target="_blank" rel="noopener"><span>Optional</span>NASA 3D Resources</a></div>
+      <div class="vacation-box">
+        <b>Vacation rule:</b> no required camp work, no progress penalty, no make up sessions. Optional idea: take 10 photos of textures, shapes, creatures, tools, toys, rocks, shells, signs, buildings, or objects that might become future models.
       </div>
     </section>
-    
-
     <section class="week page-break">
       <div class="week-header">
         <div>
-          <p class="eyebrow">Week 3 | June 8-12</p>
-          <h2>Digital Clay Sculpting</h2>
+          <p class="eyebrow">Week 3 | June 8 to June 12</p>
+          <h2>Reference Modeling and Real Object Study</h2>
         </div>
-        <span class="week-badge">5 days</span>
+        <span class="week-badge">5 camp days</span>
       </div>
       <div class="week-summary">
-        <div><b>Goal</b><p>Connect her real-world sculpting instincts to Blender's sculpt tools.</p></div>
-        <div><b>Deliverable</b><p>A small sculpted bust, head, rock creature, or alien.</p></div>
-        <div><b>Skills</b><ul><li>Sculpt mode</li><li>Symmetry</li><li>Grab, clay, smooth, inflate</li><li>Remesh and decimate basics</li></ul></div>
+        <div><b>Goal</b><p>Move from toy shapes into real modeling: references, orthographic views, edge loops, extrusion chains, and object structure.</p></div>
+        <div><b>Deliverable</b><p>A stylized cup, mug, creature accessory, or small prop based on a real reference.</p></div>
+        <div><b>Skills</b><ul><li>Reference images</li><li>Orthographic views</li><li>Loop cuts</li><li>Extrusion chains</li><li>Topology repair</li></ul></div>
       </div>
-      <div class="resource-row"><a class="resource-pill" href="https://studio.blender.org/training/blender-fundamentals-45-lts/" target="_blank" rel="noopener"><span>Main lessons</span>Blender Fundamentals 4.5 LTS</a></div>
+      <div class="resource-row"><a class="resource-pill" href="https://www.youtube.com/watch?v=z-Xl9tGqH14" target="_blank" rel="noopener"><span>Resource</span>Tutorial Video</a><a class="resource-pill" href="https://docs.blender.org/manual/en/latest/editors/3dview/navigate/viewpoint.html" target="_blank" rel="noopener"><span>Resource</span>Viewpoints</a><a class="resource-pill" href="https://docs.blender.org/manual/en/latest/modeling/meshes/editing/edge/loopcut_slide.html" target="_blank" rel="noopener"><span>Resource</span>Loop Cut</a><a class="resource-pill" href="https://docs.blender.org/manual/en/latest/modeling/meshes/editing/mesh/extrude.html" target="_blank" rel="noopener"><span>Resource</span>Extrude</a><a class="resource-pill" href="https://docs.blender.org/manual/en/latest/modeling/meshes/editing/mesh/normals.html" target="_blank" rel="noopener"><span>Resource</span>Normals</a><a class="resource-pill" href="https://docs.blender.org/manual/en/latest/modeling/meshes/editing/mesh/cleanup.html" target="_blank" rel="noopener"><span>Resource</span>Clean Up</a></div>
       <div class="days">
-        <article class="day-card">
+        
+        <article class="day-card" id="session-11">
           <div class="day-top">
             <label class="checkline">
               <input type="checkbox" id="day11" data-camp-check>
               <span class="fake-check"></span>
               <span>
                 <strong>Mon Jun 8</strong>
-                <em>Sculpt Mode Intro</em>
+                <em>Reboot and Reference Setup</em>
               </span>
             </label>
           </div>
           <div class="day-grid">
-            <div><b>Learn</b><p>Open Sculpt Mode and test brushes on a UV sphere.</p></div>
-            <div><b>Build</b><p>Make a simple blob character with symmetry on.</p></div>
-            <div><b>Done when</b><p>She understands that digital sculpting is like clay with undo.</p></div>
+            <div><b>Learn</b><p>Warm up by reopening the creature file, then watch Chapter 2 from 28:18 to 36:00. Focus on reference images and front view.</p></div>
+            <div><b>Build</b><p>Import a reference image or draw a side/front sketch. Align the model to the reference in front view.</p></div>
+            <div><b>Done when</b><p>She can explain why modeling from memory gives weak results.</p></div>
+            <div><b>Reference</b><p>Read Viewpoints and Camera View if she wants better viewing control.</p><p class="mini-links"><a href="https://www.youtube.com/watch?v=z-Xl9tGqH14" target="_blank" rel="noopener">Tutorial Video</a><a href="https://docs.blender.org/manual/en/latest/editors/3dview/navigate/viewpoint.html" target="_blank" rel="noopener">Viewpoints</a><a href="https://docs.blender.org/manual/en/latest/editors/3dview/navigate/camera_view.html" target="_blank" rel="noopener">Camera View</a></p></div>
           </div>
           <label class="notes-label" for="notes11">Camp notes</label>
           <textarea id="notes11" data-camp-note placeholder="What did she make, fix, learn, or want to try next?"></textarea>
         </article>
-        <article class="day-card">
+        <article class="day-card" id="session-12">
           <div class="day-top">
             <label class="checkline">
               <input type="checkbox" id="day12" data-camp-check>
               <span class="fake-check"></span>
               <span>
                 <strong>Tue Jun 9</strong>
-                <em>Big Forms First</em>
+                <em>Edge Rings Shape the Form</em>
               </span>
             </label>
           </div>
           <div class="day-grid">
-            <div><b>Learn</b><p>Use grab and inflate to create forehead, cheeks, jaw, nose, and ears.</p></div>
-            <div><b>Build</b><p>Avoid tiny details. Focus only on large shapes.</p></div>
-            <div><b>Done when</b><p>The sculpture has believable proportions.</p></div>
+            <div><b>Learn</b><p>Learn that rings of edges act like ribs. Move and scale edge loops to shape a cup, vase, body, or shell.</p></div>
+            <div><b>Build</b><p>Model the broad form first. No details until the silhouette looks right.</p></div>
+            <div><b>Done when</b><p>The object has a clean silhouette from front and side.</p></div>
+            <div><b>Reference</b><p>Read Loop Cut and Scale.</p><p class="mini-links"><a href="https://docs.blender.org/manual/en/latest/modeling/meshes/editing/edge/loopcut_slide.html" target="_blank" rel="noopener">Loop Cut</a><a href="https://docs.blender.org/manual/en/latest/scene_layout/object/editing/transform/scale.html" target="_blank" rel="noopener">Scale</a></p></div>
           </div>
           <label class="notes-label" for="notes12">Camp notes</label>
           <textarea id="notes12" data-camp-note placeholder="What did she make, fix, learn, or want to try next?"></textarea>
         </article>
-        <article class="day-card">
+        <article class="day-card" id="session-13">
           <div class="day-top">
             <label class="checkline">
               <input type="checkbox" id="day13" data-camp-check>
               <span class="fake-check"></span>
               <span>
                 <strong>Wed Jun 10</strong>
-                <em>Expression Day</em>
+                <em>Extrusion Chains</em>
               </span>
             </label>
           </div>
           <div class="day-grid">
-            <div><b>Learn</b><p>Add eyes, brow, mouth, and emotion.</p></div>
-            <div><b>Build</b><p>Make one happy, angry, or mysterious version.</p></div>
-            <div><b>Done when</b><p>The face communicates a mood.</p></div>
+            <div><b>Learn</b><p>Watch the handle section in Chapter 2. Learn how extrusion, rotate, and scale build a connected appendage.</p></div>
+            <div><b>Build</b><p>Add a handle, tail, horn, arm, or branch that connects to the main body instead of just floating near it.</p></div>
+            <div><b>Done when</b><p>The added part is attached visually and structurally.</p></div>
+            <div><b>Reference</b><p>Read Extrude, Normals, and Face creation concepts in Mesh Editing.</p><p class="mini-links"><a href="https://docs.blender.org/manual/en/latest/modeling/meshes/editing/mesh/extrude.html" target="_blank" rel="noopener">Extrude</a><a href="https://docs.blender.org/manual/en/latest/modeling/meshes/editing/mesh/normals.html" target="_blank" rel="noopener">Normals</a><a href="https://docs.blender.org/manual/en/latest/modeling/meshes/editing/introduction.html" target="_blank" rel="noopener">Mesh Editing</a></p></div>
           </div>
           <label class="notes-label" for="notes13">Camp notes</label>
           <textarea id="notes13" data-camp-note placeholder="What did she make, fix, learn, or want to try next?"></textarea>
         </article>
-        <article class="day-card">
+        <article class="day-card" id="session-14">
           <div class="day-top">
             <label class="checkline">
               <input type="checkbox" id="day14" data-camp-check>
               <span class="fake-check"></span>
               <span>
                 <strong>Thu Jun 11</strong>
-                <em>Surface Cleanup</em>
+                <em>Fixing Ugly Geometry</em>
               </span>
             </label>
           </div>
           <div class="day-grid">
-            <div><b>Learn</b><p>Use smooth carefully. Learn that too much smoothing erases work.</p></div>
-            <div><b>Build</b><p>Clean rough areas and save a backup version before big changes.</p></div>
-            <div><b>Done when</b><p>She learns iteration and backup discipline.</p></div>
+            <div><b>Learn</b><p>Learn why hidden faces, bad normals, and messy intersections cause problems. This is the first real troubleshooting day.</p></div>
+            <div><b>Build</b><p>Inspect yesterday&#x27;s model. Delete hidden junk, fix normals, and simplify anything too messy.</p></div>
+            <div><b>Done when</b><p>The model is cleaner after inspection, not just prettier.</p></div>
+            <div><b>Reference</b><p>Read Normals and Clean Up.</p><p class="mini-links"><a href="https://docs.blender.org/manual/en/latest/modeling/meshes/editing/mesh/normals.html" target="_blank" rel="noopener">Normals</a><a href="https://docs.blender.org/manual/en/latest/modeling/meshes/editing/mesh/cleanup.html" target="_blank" rel="noopener">Clean Up</a></p></div>
           </div>
           <label class="notes-label" for="notes14">Camp notes</label>
           <textarea id="notes14" data-camp-note placeholder="What did she make, fix, learn, or want to try next?"></textarea>
         </article>
-        <article class="day-card">
+        <article class="day-card" id="session-15">
           <div class="day-top">
             <label class="checkline">
               <input type="checkbox" id="day15" data-camp-check>
               <span class="fake-check"></span>
               <span>
                 <strong>Fri Jun 12</strong>
-                <em>Mini Bust Export</em>
+                <em>Prop Project Friday</em>
               </span>
             </label>
           </div>
           <div class="day-grid">
-            <div><b>Learn</b><p>Prepare a small bust or head for slicer review.</p></div>
-            <div><b>Build</b><p>Parent checks scale, supports, and whether the model is solid enough.</p></div>
-            <div><b>Done when</b><p>A sculpted object is ready for test printing.</p></div>
+            <div><b>Learn</b><p>Use the week&#x27;s tools without copying the video exactly.</p></div>
+            <div><b>Build</b><p>Finish one prop: mug, shell, lantern, mushroom house, creature saddle, small sword, or fantasy cup.</p></div>
+            <div><b>Done when</b><p>The prop has a reference, visible structure, and saved versions.</p></div>
+            <div><b>Reference</b><p>Review Mesh Editing and Modifiers Intro.</p><p class="mini-links"><a href="https://docs.blender.org/manual/en/latest/modeling/meshes/editing/introduction.html" target="_blank" rel="noopener">Mesh Editing</a><a href="https://docs.blender.org/manual/en/latest/modeling/modifiers/introduction.html" target="_blank" rel="noopener">Modifiers Intro</a></p></div>
           </div>
           <label class="notes-label" for="notes15">Camp notes</label>
           <textarea id="notes15" data-camp-note placeholder="What did she make, fix, learn, or want to try next?"></textarea>
         </article>
       </div>
     </section>
-    
-
     <section class="week page-break">
       <div class="week-header">
         <div>
-          <p class="eyebrow">Week 4 | June 15-19</p>
-          <h2>Real Sculpture to Digital Model</h2>
+          <p class="eyebrow">Week 4 | June 15 to June 19</p>
+          <h2>Digital Clay Sculpting Week</h2>
         </div>
-        <span class="week-badge">5 days</span>
+        <span class="week-badge">5 camp days</span>
       </div>
       <div class="week-summary">
-        <div><b>Goal</b><p>Use her physical sculpting strengths as the design source for a digital model.</p></div>
-        <div><b>Deliverable</b><p>A digital version inspired by one of her real-world clay or sculpture pieces.</p></div>
-        <div><b>Skills</b><ul><li>Reference observation</li><li>Proportions</li><li>Blocking</li><li>Digital translation</li></ul></div>
+        <div><b>Goal</b><p>Translate her real world sculpting instincts into Blender sculpting without losing printability.</p></div>
+        <div><b>Deliverable</b><p>A sculpted creature head, bust, mini figure, or ornament concept.</p></div>
+        <div><b>Skills</b><ul><li>Sculpt mode</li><li>Brush control</li><li>Symmetry</li><li>Large forms first</li><li>Remesh</li><li>Details last</li></ul></div>
       </div>
-      <div class="resource-row"><a class="resource-pill" href="https://studio.blender.org/training/blender-fundamentals-45-lts/" target="_blank" rel="noopener"><span>Main lessons</span>Blender Fundamentals 4.5 LTS</a></div>
+      <div class="resource-row"><a class="resource-pill" href="https://docs.blender.org/manual/en/latest/sculpt_paint/sculpting/introduction/general.html" target="_blank" rel="noopener"><span>Resource</span>Sculpting Overview</a><a class="resource-pill" href="https://docs.blender.org/manual/en/latest/sculpt_paint/sculpting/brushes/index.html" target="_blank" rel="noopener"><span>Resource</span>Sculpt Brushes</a><a class="resource-pill" href="https://docs.blender.org/manual/en/latest/sculpt_paint/sculpting/tool_settings/symmetry.html" target="_blank" rel="noopener"><span>Resource</span>Sculpt Symmetry</a><a class="resource-pill" href="https://docs.blender.org/manual/en/latest/sculpt_paint/sculpting/tool_settings/remesh.html" target="_blank" rel="noopener"><span>Resource</span>Sculpt Remesh</a><a class="resource-pill" href="https://docs.blender.org/manual/en/latest/modeling/modifiers/generate/remesh.html" target="_blank" rel="noopener"><span>Resource</span>Remesh Modifier</a></div>
       <div class="days">
-        <article class="day-card">
+        
+        <article class="day-card" id="session-16">
           <div class="day-top">
             <label class="checkline">
               <input type="checkbox" id="day16" data-camp-check>
               <span class="fake-check"></span>
               <span>
                 <strong>Mon Jun 15</strong>
-                <em>Choose the Real Sculpture</em>
+                <em>Sculpt Mode Tour</em>
               </span>
             </label>
           </div>
           <div class="day-grid">
-            <div><b>Learn</b><p>Pick one real object she made. Photograph it from front, side, back, and top.</p></div>
-            <div><b>Build</b><p>Sketch the simple shapes inside the sculpture.</p></div>
-            <div><b>Done when</b><p>She can identify the main forms.</p></div>
+            <div><b>Learn</b><p>Learn sculpt mode, brush size, strength, smooth, grab, clay, inflate, crease, and undo discipline.</p></div>
+            <div><b>Build</b><p>Start with a sphere and make 5 quick heads in 10 minutes each. Trash the bad ones without drama.</p></div>
+            <div><b>Done when</b><p>She understands sculpting is iteration, not one perfect attempt.</p></div>
+            <div><b>Reference</b><p>Read Sculpting Overview and Sculpt Brushes.</p><p class="mini-links"><a href="https://docs.blender.org/manual/en/latest/sculpt_paint/sculpting/introduction/general.html" target="_blank" rel="noopener">Sculpting Overview</a><a href="https://docs.blender.org/manual/en/latest/sculpt_paint/sculpting/brushes/index.html" target="_blank" rel="noopener">Sculpt Brushes</a></p></div>
           </div>
           <label class="notes-label" for="notes16">Camp notes</label>
           <textarea id="notes16" data-camp-note placeholder="What did she make, fix, learn, or want to try next?"></textarea>
         </article>
-        <article class="day-card">
+        <article class="day-card" id="session-17">
           <div class="day-top">
             <label class="checkline">
               <input type="checkbox" id="day17" data-camp-check>
               <span class="fake-check"></span>
               <span>
                 <strong>Tue Jun 16</strong>
-                <em>Digital Blockout</em>
+                <em>Symmetry and Creature Heads</em>
               </span>
             </label>
           </div>
           <div class="day-grid">
-            <div><b>Learn</b><p>Build the sculpture from basic forms in Blender.</p></div>
-            <div><b>Build</b><p>Ignore tiny details. Get size and silhouette right.</p></div>
-            <div><b>Done when</b><p>The digital model resembles the real sculpture.</p></div>
+            <div><b>Learn</b><p>Learn mirror symmetry and why it saves time for faces and characters.</p></div>
+            <div><b>Build</b><p>Make one symmetrical creature head with eyes, brow, mouth, cheeks, and ears or horns.</p></div>
+            <div><b>Done when</b><p>The face has readable expression from front view.</p></div>
+            <div><b>Reference</b><p>Read Sculpt Symmetry.</p><p class="mini-links"><a href="https://docs.blender.org/manual/en/latest/sculpt_paint/sculpting/tool_settings/symmetry.html" target="_blank" rel="noopener">Sculpt Symmetry</a></p></div>
           </div>
           <label class="notes-label" for="notes17">Camp notes</label>
           <textarea id="notes17" data-camp-note placeholder="What did she make, fix, learn, or want to try next?"></textarea>
         </article>
-        <article class="day-card">
+        <article class="day-card" id="session-18">
           <div class="day-top">
             <label class="checkline">
               <input type="checkbox" id="day18" data-camp-check>
               <span class="fake-check"></span>
               <span>
                 <strong>Wed Jun 17</strong>
-                <em>Proportion Fix</em>
+                <em>Large Forms Before Details</em>
               </span>
             </label>
           </div>
           <div class="day-grid">
-            <div><b>Learn</b><p>Compare the real object and digital model side by side.</p></div>
-            <div><b>Build</b><p>Fix head, body, limb sizes, and major angles.</p></div>
-            <div><b>Done when</b><p>She sees modeling as revision.</p></div>
+            <div><b>Learn</b><p>Learn the rule: big form, medium form, small detail. Do not add scales, wrinkles, or fur yet.</p></div>
+            <div><b>Build</b><p>Rebuild yesterday&#x27;s head from scratch in 45 minutes using better large forms.</p></div>
+            <div><b>Done when</b><p>The second version is stronger because the big shapes are better.</p></div>
+            <div><b>Reference</b><p>Review Sculpt Brushes and Remesh.</p><p class="mini-links"><a href="https://docs.blender.org/manual/en/latest/sculpt_paint/sculpting/brushes/index.html" target="_blank" rel="noopener">Sculpt Brushes</a><a href="https://docs.blender.org/manual/en/latest/sculpt_paint/sculpting/tool_settings/remesh.html" target="_blank" rel="noopener">Sculpt Remesh</a></p></div>
           </div>
           <label class="notes-label" for="notes18">Camp notes</label>
           <textarea id="notes18" data-camp-note placeholder="What did she make, fix, learn, or want to try next?"></textarea>
         </article>
-        <article class="day-card">
+        <article class="day-card" id="session-19">
           <div class="day-top">
             <label class="checkline">
               <input type="checkbox" id="day19" data-camp-check>
               <span class="fake-check"></span>
               <span>
                 <strong>Thu Jun 18</strong>
-                <em>Detail Pass</em>
+                <em>Surface Cleanup and Remesh</em>
               </span>
             </label>
           </div>
           <div class="day-grid">
-            <div><b>Learn</b><p>Add details that matter most: eyes, texture, clothing, scales, tools, or accessories.</p></div>
-            <div><b>Build</b><p>Use sculpt brushes or modeled pieces.</p></div>
-            <div><b>Done when</b><p>The digital version has identity.</p></div>
+            <div><b>Learn</b><p>Learn when sculpting gets lumpy and how remesh can help. Parent helps with settings.</p></div>
+            <div><b>Build</b><p>Clean one sculpt enough that it could become a printed ornament or bust.</p></div>
+            <div><b>Done when</b><p>The model is cleaner, not over detailed.</p></div>
+            <div><b>Reference</b><p>Read Sculpt Remesh and Remesh Modifier.</p><p class="mini-links"><a href="https://docs.blender.org/manual/en/latest/sculpt_paint/sculpting/tool_settings/remesh.html" target="_blank" rel="noopener">Sculpt Remesh</a><a href="https://docs.blender.org/manual/en/latest/modeling/modifiers/generate/remesh.html" target="_blank" rel="noopener">Remesh Modifier</a></p></div>
           </div>
           <label class="notes-label" for="notes19">Camp notes</label>
           <textarea id="notes19" data-camp-note placeholder="What did she make, fix, learn, or want to try next?"></textarea>
         </article>
-        <article class="day-card">
+        <article class="day-card" id="session-20">
           <div class="day-top">
             <label class="checkline">
               <input type="checkbox" id="day20" data-camp-check>
               <span class="fake-check"></span>
               <span>
                 <strong>Fri Jun 19</strong>
-                <em>Before and After Board</em>
+                <em>Sculpted Mini Project</em>
               </span>
             </label>
           </div>
           <div class="day-grid">
-            <div><b>Learn</b><p>Take screenshots and photos for a one-page portfolio entry.</p></div>
-            <div><b>Build</b><p>Write 3 sentences: what changed, what was hard, and what got better.</p></div>
-            <div><b>Done when</b><p>One portfolio page is complete.</p></div>
+            <div><b>Learn</b><p>Combine sculpt mode with simple modeled accessories.</p></div>
+            <div><b>Build</b><p>Finish a creature bust, mascot head, dragon egg, monster charm, or fantasy ornament.</p></div>
+            <div><b>Done when</b><p>One sculpt is saved, exported as a test STL, and photographed as a viewport screenshot.</p></div>
+            <div><b>Reference</b><p>Review 3D Print Toolbox Extension as preview for next week.</p><p class="mini-links"><a href="https://extensions.blender.org/add-ons/print3d-toolbox/" target="_blank" rel="noopener">3D Print Toolbox Extension</a><a href="https://docs.blender.org/manual/en/latest/modeling/meshes/editing/mesh/cleanup.html" target="_blank" rel="noopener">Clean Up</a></p></div>
           </div>
           <label class="notes-label" for="notes20">Camp notes</label>
           <textarea id="notes20" data-camp-note placeholder="What did she make, fix, learn, or want to try next?"></textarea>
         </article>
       </div>
     </section>
-    
-
     <section class="week page-break">
       <div class="week-header">
         <div>
-          <p class="eyebrow">Week 5 | June 22-26</p>
+          <p class="eyebrow">Week 5 | June 22 to June 26</p>
           <h2>Printability Bootcamp</h2>
         </div>
-        <span class="week-badge">5 days</span>
+        <span class="week-badge">5 camp days</span>
       </div>
       <div class="week-summary">
-        <div><b>Goal</b><p>Learn why cool models fail and how to fix them before wasting filament.</p></div>
-        <div><b>Deliverable</b><p>A print-ready model that passes basic mesh checks.</p></div>
-        <div><b>Skills</b><ul><li>Scale</li><li>Wall thickness</li><li>Non-manifold problems</li><li>3D Print Toolbox</li></ul></div>
+        <div><b>Goal</b><p>Teach the boring but important skill: a cool model is not done until it can survive slicing and printing.</p></div>
+        <div><b>Deliverable</b><p>A successful small test print plus a before/after repair log.</p></div>
+        <div><b>Skills</b><ul><li>Scale</li><li>Wall thickness</li><li>Normals</li><li>Manifold thinking</li><li>Supports</li><li>Slicer preview</li><li>Iteration</li></ul></div>
       </div>
-      <div class="resource-row"><a class="resource-pill" href="https://docs.blender.org/manual/en/4.1/addons/mesh/3d_print_toolbox.html" target="_blank" rel="noopener"><span>Print prep</span>Blender 3D Print Toolbox Manual</a><a class="resource-pill" href="https://help.prusa3d.com/article/first-print-with-prusaslicer_1753" target="_blank" rel="noopener"><span>Slicer</span>PrusaSlicer First Print Guide</a></div>
+      <div class="resource-row"><a class="resource-pill" href="https://extensions.blender.org/add-ons/print3d-toolbox/" target="_blank" rel="noopener"><span>Resource</span>3D Print Toolbox Extension</a><a class="resource-pill" href="https://docs.blender.org/manual/en/latest/editors/preferences/addons.html" target="_blank" rel="noopener"><span>Resource</span>Add-ons</a><a class="resource-pill" href="https://docs.blender.org/manual/en/latest/modeling/meshes/editing/mesh/cleanup.html" target="_blank" rel="noopener"><span>Resource</span>Clean Up</a><a class="resource-pill" href="https://docs.blender.org/manual/en/latest/modeling/meshes/editing/mesh/normals.html" target="_blank" rel="noopener"><span>Resource</span>Normals</a><a class="resource-pill" href="https://help.prusa3d.com/article/first-print-with-prusaslicer_1753" target="_blank" rel="noopener"><span>Resource</span>PrusaSlicer First Print</a><a class="resource-pill" href="https://ultimaker.com/software/ultimaker-cura/" target="_blank" rel="noopener"><span>Resource</span>UltiMaker Cura</a></div>
       <div class="days">
-        <article class="day-card">
+        
+        <article class="day-card" id="session-21">
           <div class="day-top">
             <label class="checkline">
               <input type="checkbox" id="day21" data-camp-check>
               <span class="fake-check"></span>
               <span>
                 <strong>Mon Jun 22</strong>
-                <em>Size and Scale</em>
+                <em>What Makes a Model Printable</em>
               </span>
             </label>
           </div>
           <div class="day-grid">
-            <div><b>Learn</b><p>Learn that models need real-world size, not just screen size.</p></div>
-            <div><b>Build</b><p>Set a model to a specific height or width in millimeters.</p></div>
-            <div><b>Done when</b><p>The model has a sensible real-world size.</p></div>
+            <div><b>Learn</b><p>Learn manifold vs messy, paper thin walls, flipped normals, unsupported overhangs, tiny details, and scale.</p></div>
+            <div><b>Build</b><p>Open the Week 4 sculpt, duplicate it, and make a print prep copy.</p></div>
+            <div><b>Done when</b><p>The print prep copy is separate from the art copy.</p></div>
+            <div><b>Reference</b><p>Read Add-ons, 3D Print Toolbox Extension, Normals, and Clean Up.</p><p class="mini-links"><a href="https://docs.blender.org/manual/en/latest/editors/preferences/addons.html" target="_blank" rel="noopener">Add-ons</a><a href="https://extensions.blender.org/add-ons/print3d-toolbox/" target="_blank" rel="noopener">3D Print Toolbox Extension</a><a href="https://docs.blender.org/manual/en/latest/modeling/meshes/editing/mesh/normals.html" target="_blank" rel="noopener">Normals</a><a href="https://docs.blender.org/manual/en/latest/modeling/meshes/editing/mesh/cleanup.html" target="_blank" rel="noopener">Clean Up</a></p></div>
           </div>
           <label class="notes-label" for="notes21">Camp notes</label>
           <textarea id="notes21" data-camp-note placeholder="What did she make, fix, learn, or want to try next?"></textarea>
         </article>
-        <article class="day-card">
+        <article class="day-card" id="session-22">
           <div class="day-top">
             <label class="checkline">
               <input type="checkbox" id="day22" data-camp-check>
               <span class="fake-check"></span>
               <span>
                 <strong>Tue Jun 23</strong>
-                <em>Thin Parts and Weak Parts</em>
+                <em>Scale and Wall Thickness</em>
               </span>
             </label>
           </div>
           <div class="day-grid">
-            <div><b>Learn</b><p>Look for tiny horns, tails, fingers, and thin walls that may break.</p></div>
-            <div><b>Build</b><p>Thicken or simplify fragile areas.</p></div>
-            <div><b>Done when</b><p>She can spot parts that are too delicate to print.</p></div>
+            <div><b>Learn</b><p>Learn real world size. Measure something on the desk. Compare 10 mm, 50 mm, and 100 mm objects.</p></div>
+            <div><b>Build</b><p>Set object scale intentionally. Add thickness where needed using Solidify or simple modeling.</p></div>
+            <div><b>Done when</b><p>The model has a chosen size in millimeters and is not accidentally gigantic.</p></div>
+            <div><b>Reference</b><p>Read Solidify Modifier and PrusaSlicer First Print.</p><p class="mini-links"><a href="https://docs.blender.org/manual/en/latest/modeling/modifiers/generate/solidify.html" target="_blank" rel="noopener">Solidify Modifier</a><a href="https://help.prusa3d.com/article/first-print-with-prusaslicer_1753" target="_blank" rel="noopener">PrusaSlicer First Print</a></p></div>
           </div>
           <label class="notes-label" for="notes22">Camp notes</label>
           <textarea id="notes22" data-camp-note placeholder="What did she make, fix, learn, or want to try next?"></textarea>
         </article>
-        <article class="day-card">
+        <article class="day-card" id="session-23">
           <div class="day-top">
             <label class="checkline">
               <input type="checkbox" id="day23" data-camp-check>
               <span class="fake-check"></span>
               <span>
                 <strong>Wed Jun 24</strong>
-                <em>3D Print Toolbox</em>
+                <em>Slicer Preview Day</em>
               </span>
             </label>
           </div>
           <div class="day-grid">
-            <div><b>Learn</b><p>Enable and run Blender’s 3D Print Toolbox checks with parent help.</p></div>
-            <div><b>Build</b><p>Find and fix at least one issue or write down why it matters.</p></div>
-            <div><b>Done when</b><p>She knows that printable models need checking.</p></div>
+            <div><b>Learn</b><p>Learn that the slicer preview tells the truth. Look for floating islands, impossible bridges, overhangs, and tiny parts.</p></div>
+            <div><b>Build</b><p>Slice the model with parent help. Make notes on supports, orientation, infill, layer height, and print time.</p></div>
+            <div><b>Done when</b><p>She can explain why the first orientation may not be the best one.</p></div>
+            <div><b>Reference</b><p>Use PrusaSlicer First Print or Cura depending on your printer.</p><p class="mini-links"><a href="https://help.prusa3d.com/article/first-print-with-prusaslicer_1753" target="_blank" rel="noopener">PrusaSlicer First Print</a><a href="https://ultimaker.com/software/ultimaker-cura/" target="_blank" rel="noopener">UltiMaker Cura</a></p></div>
           </div>
           <label class="notes-label" for="notes23">Camp notes</label>
           <textarea id="notes23" data-camp-note placeholder="What did she make, fix, learn, or want to try next?"></textarea>
         </article>
-        <article class="day-card">
+        <article class="day-card" id="session-24">
           <div class="day-top">
             <label class="checkline">
               <input type="checkbox" id="day24" data-camp-check>
               <span class="fake-check"></span>
               <span>
                 <strong>Thu Jun 25</strong>
-                <em>Orientation and Supports</em>
+                <em>Print, Inspect, Fix</em>
               </span>
             </label>
           </div>
           <div class="day-grid">
-            <div><b>Learn</b><p>Use the slicer preview to compare two orientations.</p></div>
-            <div><b>Build</b><p>Rotate the model and check supports, bed contact, and print time.</p></div>
-            <div><b>Done when</b><p>She can explain why orientation changes a print.</p></div>
+            <div><b>Learn</b><p>Print a small version or a calibration style test. Parent handles printer operations.</p></div>
+            <div><b>Build</b><p>Compare the print to the model. Circle 3 problems: weak parts, ugly supports, rough surface, lost detail, bad scale.</p></div>
+            <div><b>Done when</b><p>She has a repair list based on evidence, not guessing.</p></div>
+            <div><b>Reference</b><p>Use the printer handbook and slicer guide.</p><p class="mini-links"><a href="https://help.prusa3d.com/article/printer-handbooks_125045" target="_blank" rel="noopener">Prusa Handbooks</a><a href="https://help.prusa3d.com/article/first-print-with-prusaslicer_1753" target="_blank" rel="noopener">PrusaSlicer First Print</a></p></div>
           </div>
           <label class="notes-label" for="notes24">Camp notes</label>
           <textarea id="notes24" data-camp-note placeholder="What did she make, fix, learn, or want to try next?"></textarea>
         </article>
-        <article class="day-card">
+        <article class="day-card" id="session-25">
           <div class="day-top">
             <label class="checkline">
               <input type="checkbox" id="day25" data-camp-check>
               <span class="fake-check"></span>
               <span>
                 <strong>Fri Jun 26</strong>
-                <em>Test Print Day</em>
+                <em>Second Version Challenge</em>
               </span>
             </label>
           </div>
           <div class="day-grid">
-            <div><b>Learn</b><p>Print small, not perfect. The goal is information.</p></div>
-            <div><b>Build</b><p>Run a small test print or slice simulation and log results.</p></div>
-            <div><b>Done when</b><p>The print log records what worked and what failed.</p></div>
+            <div><b>Learn</b><p>Learn revision: change one thing at a time and save a new version.</p></div>
+            <div><b>Build</b><p>Fix the top two print problems and prepare a second export.</p></div>
+            <div><b>Done when</b><p>The v02 model is better because of an actual test.</p></div>
+            <div><b>Reference</b><p>Review Clean Up and Normals.</p><p class="mini-links"><a href="https://docs.blender.org/manual/en/latest/modeling/meshes/editing/mesh/cleanup.html" target="_blank" rel="noopener">Clean Up</a><a href="https://docs.blender.org/manual/en/latest/modeling/meshes/editing/mesh/normals.html" target="_blank" rel="noopener">Normals</a></p></div>
           </div>
           <label class="notes-label" for="notes25">Camp notes</label>
           <textarea id="notes25" data-camp-note placeholder="What did she make, fix, learn, or want to try next?"></textarea>
         </article>
       </div>
     </section>
-    
-
     <section class="week page-break">
       <div class="week-header">
         <div>
-          <p class="eyebrow">Week 6 | June 29-July 3</p>
-          <h2>Functional Object Week</h2>
+          <p class="eyebrow">Week 6 | June 29 to July 3</p>
+          <h2>Functional Objects and Exact Measurements</h2>
         </div>
-        <span class="week-badge">5 days</span>
+        <span class="week-badge">5 camp days</span>
       </div>
       <div class="week-summary">
-        <div><b>Goal</b><p>Introduce engineering-style thinking without abandoning creativity.</p></div>
-        <div><b>Deliverable</b><p>A useful object such as a hook, stand, box, token holder, bookmark, or cable clip.</p></div>
-        <div><b>Skills</b><ul><li>Measurements</li><li>Simple constraints</li><li>Boolean cuts</li><li>Fit and tolerance</li></ul></div>
+        <div><b>Goal</b><p>Add engineering thinking without abandoning creativity.</p></div>
+        <div><b>Deliverable</b><p>A useful object: clip, holder, nameplate, cable guide, stamp, phone stand, drawer label, or simple container.</p></div>
+        <div><b>Skills</b><ul><li>Measurements</li><li>Tolerances</li><li>Boolean cuts</li><li>Flat bases</li><li>Text labels</li><li>Fusion preview</li></ul></div>
       </div>
-      <div class="resource-row"><a class="resource-pill" href="https://www.autodesk.com/education/edu-software/fusion" target="_blank" rel="noopener"><span>CAD add-on</span>Autodesk Fusion Education Access</a><a class="resource-pill" href="https://studio.blender.org/training/blender-fundamentals-45-lts/" target="_blank" rel="noopener"><span>Main lessons</span>Blender Fundamentals 4.5 LTS</a></div>
+      <div class="resource-row"><a class="resource-pill" href="https://docs.blender.org/manual/en/latest/modeling/modifiers/generate/booleans.html" target="_blank" rel="noopener"><span>Resource</span>Boolean Modifier</a><a class="resource-pill" href="https://docs.blender.org/manual/en/latest/scene_layout/object/editing/transform/introduction.html" target="_blank" rel="noopener"><span>Resource</span>Object Transform</a><a class="resource-pill" href="https://www.autodesk.com/education/edu-software/fusion" target="_blank" rel="noopener"><span>Resource</span>Fusion Education</a><a class="resource-pill" href="https://docs.blender.org/manual/en/latest/modeling/meshes/editing/introduction.html" target="_blank" rel="noopener"><span>Resource</span>Mesh Editing</a><a class="resource-pill" href="https://docs.blender.org/manual/en/latest/modeling/modifiers/generate/bevel.html" target="_blank" rel="noopener"><span>Resource</span>Bevel Modifier</a></div>
       <div class="days">
-        <article class="day-card">
+        
+        <article class="day-card" id="session-26">
           <div class="day-top">
             <label class="checkline">
               <input type="checkbox" id="day26" data-camp-check>
               <span class="fake-check"></span>
               <span>
                 <strong>Mon Jun 29</strong>
-                <em>Measure Something Real</em>
+                <em>Measure First</em>
               </span>
             </label>
           </div>
           <div class="day-grid">
-            <div><b>Learn</b><p>Use a ruler or caliper with parent help. Measure the object the print must fit.</p></div>
-            <div><b>Build</b><p>Sketch a simple useful object with 3 key measurements.</p></div>
-            <div><b>Done when</b><p>The idea has actual dimensions.</p></div>
+            <div><b>Learn</b><p>Learn calipers or ruler basics. Measure a real object and write down height, width, depth, and clearance.</p></div>
+            <div><b>Build</b><p>Design a simple useful thing on paper: cable clip, marker holder, desk label, small tray, or tool stand.</p></div>
+            <div><b>Done when</b><p>The design has real measurements before Blender opens.</p></div>
+            <div><b>Reference</b><p>Read Object Transform and Boolean Modifier.</p><p class="mini-links"><a href="https://docs.blender.org/manual/en/latest/scene_layout/object/editing/transform/introduction.html" target="_blank" rel="noopener">Object Transform</a><a href="https://docs.blender.org/manual/en/latest/modeling/modifiers/generate/booleans.html" target="_blank" rel="noopener">Boolean Modifier</a></p></div>
           </div>
           <label class="notes-label" for="notes26">Camp notes</label>
           <textarea id="notes26" data-camp-note placeholder="What did she make, fix, learn, or want to try next?"></textarea>
         </article>
-        <article class="day-card">
+        <article class="day-card" id="session-27">
           <div class="day-top">
             <label class="checkline">
               <input type="checkbox" id="day27" data-camp-check>
               <span class="fake-check"></span>
               <span>
                 <strong>Tue Jun 30</strong>
-                <em>Model the Base Shape</em>
+                <em>Block the Functional Shape</em>
               </span>
             </label>
           </div>
           <div class="day-grid">
-            <div><b>Learn</b><p>Build the main shape in Blender or Fusion if she is ready for CAD.</p></div>
-            <div><b>Build</b><p>Create the base, wall, hook, tray, or clip shape.</p></div>
-            <div><b>Done when</b><p>The object exists at the correct rough size.</p></div>
+            <div><b>Learn</b><p>Learn flat bottoms, stable footprints, simple walls, and why prints need contact with the bed.</p></div>
+            <div><b>Build</b><p>Block the object using cubes, cylinders, bevels, and boolean style thinking.</p></div>
+            <div><b>Done when</b><p>The object would sit flat and has a clear job.</p></div>
+            <div><b>Reference</b><p>Read Bevel Modifier and Mesh Editing.</p><p class="mini-links"><a href="https://docs.blender.org/manual/en/latest/modeling/modifiers/generate/bevel.html" target="_blank" rel="noopener">Bevel Modifier</a><a href="https://docs.blender.org/manual/en/latest/modeling/meshes/editing/introduction.html" target="_blank" rel="noopener">Mesh Editing</a></p></div>
           </div>
           <label class="notes-label" for="notes27">Camp notes</label>
           <textarea id="notes27" data-camp-note placeholder="What did she make, fix, learn, or want to try next?"></textarea>
         </article>
-        <article class="day-card">
+        <article class="day-card" id="session-28">
           <div class="day-top">
             <label class="checkline">
               <input type="checkbox" id="day28" data-camp-check>
               <span class="fake-check"></span>
               <span>
                 <strong>Wed Jul 1</strong>
-                <em>Cutouts and Holes</em>
+                <em>Holes, Slots, and Clearances</em>
               </span>
             </label>
           </div>
           <div class="day-grid">
-            <div><b>Learn</b><p>Use boolean thinking: subtract space for holes, slots, or openings.</p></div>
-            <div><b>Build</b><p>Add one functional opening or cutout.</p></div>
-            <div><b>Done when</b><p>The model solves a real problem, not just looks cool.</p></div>
+            <div><b>Learn</b><p>Learn holes and slots need extra room because printed plastic is not perfect.</p></div>
+            <div><b>Build</b><p>Add one hole, groove, slot, or inset label area. Make a test strip if needed.</p></div>
+            <div><b>Done when</b><p>The model includes a practical clearance plan.</p></div>
+            <div><b>Reference</b><p>Read Boolean Modifier and Solidify Modifier.</p><p class="mini-links"><a href="https://docs.blender.org/manual/en/latest/modeling/modifiers/generate/booleans.html" target="_blank" rel="noopener">Boolean Modifier</a><a href="https://docs.blender.org/manual/en/latest/modeling/modifiers/generate/solidify.html" target="_blank" rel="noopener">Solidify Modifier</a></p></div>
           </div>
           <label class="notes-label" for="notes28">Camp notes</label>
           <textarea id="notes28" data-camp-note placeholder="What did she make, fix, learn, or want to try next?"></textarea>
         </article>
-        <article class="day-card">
+        <article class="day-card" id="session-29">
           <div class="day-top">
             <label class="checkline">
               <input type="checkbox" id="day29" data-camp-check>
               <span class="fake-check"></span>
               <span>
                 <strong>Thu Jul 2</strong>
-                <em>Fit Check</em>
+                <em>Fusion Preview Day</em>
               </span>
             </label>
           </div>
           <div class="day-grid">
-            <div><b>Learn</b><p>Slice or print a tiny test section if useful.</p></div>
-            <div><b>Build</b><p>Compare the print or preview to the measurement goal.</p></div>
-            <div><b>Done when</b><p>She learns that functional objects usually need testing.</p></div>
+            <div><b>Learn</b><p>Introduce Fusion as the future exact CAD tool. Keep it short. Blender remains the main tool.</p></div>
+            <div><b>Build</b><p>Watch a parent guided Fusion orientation or just create a sketch and rectangle if Fusion is installed.</p></div>
+            <div><b>Done when</b><p>She understands why Blender is stronger for sculpting and Fusion is stronger for measured parts.</p></div>
+            <div><b>Reference</b><p>Open Fusion Education resource.</p><p class="mini-links"><a href="https://www.autodesk.com/education/edu-software/fusion" target="_blank" rel="noopener">Fusion Education</a></p></div>
           </div>
           <label class="notes-label" for="notes29">Camp notes</label>
           <textarea id="notes29" data-camp-note placeholder="What did she make, fix, learn, or want to try next?"></textarea>
         </article>
-        <article class="day-card">
+        <article class="day-card" id="session-30">
           <div class="day-top">
             <label class="checkline">
               <input type="checkbox" id="day30" data-camp-check>
               <span class="fake-check"></span>
               <span>
                 <strong>Fri Jul 3</strong>
-                <em>Useful Object Finish</em>
+                <em>Useful Print Friday</em>
               </span>
             </label>
           </div>
           <div class="day-grid">
-            <div><b>Learn</b><p>Light holiday-week session: clean up the file and export STL.</p></div>
-            <div><b>Build</b><p>Print or prepare the final useful object.</p></div>
-            <div><b>Done when</b><p>One functional print is ready or in progress.</p></div>
+            <div><b>Learn</b><p>Finish the functional object and slice it. Parent helps choose print settings.</p></div>
+            <div><b>Build</b><p>Print a small useful object or a test version.</p></div>
+            <div><b>Done when</b><p>The object does something useful in the real world.</p></div>
+            <div><b>Reference</b><p>Use PrusaSlicer First Print or Cura.</p><p class="mini-links"><a href="https://help.prusa3d.com/article/first-print-with-prusaslicer_1753" target="_blank" rel="noopener">PrusaSlicer First Print</a><a href="https://ultimaker.com/software/ultimaker-cura/" target="_blank" rel="noopener">UltiMaker Cura</a></p></div>
           </div>
           <label class="notes-label" for="notes30">Camp notes</label>
           <textarea id="notes30" data-camp-note placeholder="What did she make, fix, learn, or want to try next?"></textarea>
         </article>
       </div>
     </section>
-    
-
     <section class="week page-break">
       <div class="week-header">
         <div>
-          <p class="eyebrow">Week 7 | July 6-10</p>
-          <h2>Slicer and Printing Lab</h2>
+          <p class="eyebrow">Week 7 | July 6 to July 10</p>
+          <h2>Materials, Textures, and UVs</h2>
         </div>
-        <span class="week-badge">5 days</span>
+        <span class="week-badge">5 camp days</span>
       </div>
       <div class="week-summary">
-        <div><b>Goal</b><p>Learn the bridge between a finished model and a successful physical print.</p></div>
-        <div><b>Deliverable</b><p>A tested print settings sheet and one improved reprint.</p></div>
-        <div><b>Skills</b><ul><li>Layer height</li><li>Infill</li><li>Supports</li><li>Prototype testing</li></ul></div>
+        <div><b>Goal</b><p>Teach presentation and surface design without pretending color makes a bad model good.</p></div>
+        <div><b>Deliverable</b><p>A rendered scene and a print color plan for one model.</p></div>
+        <div><b>Skills</b><ul><li>Materials</li><li>Roughness</li><li>Shader basics</li><li>Texture thinking</li><li>UV seams</li><li>Color story</li></ul></div>
       </div>
-      <div class="resource-row"><a class="resource-pill" href="https://help.prusa3d.com/article/first-print-with-prusaslicer_1753" target="_blank" rel="noopener"><span>Slicer</span>PrusaSlicer First Print Guide</a><a class="resource-pill" href="https://ultimaker.com/software/ultimaker-cura/" target="_blank" rel="noopener"><span>Slicer option</span>UltiMaker Cura</a></div>
+      <div class="resource-row"><a class="resource-pill" href="https://www.youtube.com/watch?v=z-Xl9tGqH14" target="_blank" rel="noopener"><span>Resource</span>Tutorial Video</a><a class="resource-pill" href="https://docs.blender.org/manual/en/latest/render/materials/introduction.html" target="_blank" rel="noopener"><span>Resource</span>Materials</a><a class="resource-pill" href="https://docs.blender.org/manual/en/latest/render/shader_nodes/introduction.html" target="_blank" rel="noopener"><span>Resource</span>Shader Nodes</a><a class="resource-pill" href="https://docs.blender.org/manual/en/latest/modeling/meshes/uv/index.html" target="_blank" rel="noopener"><span>Resource</span>UV Intro</a><a class="resource-pill" href="https://docs.blender.org/manual/en/latest/modeling/meshes/uv/unwrapping/introduction.html" target="_blank" rel="noopener"><span>Resource</span>UV Unwrapping</a><a class="resource-pill" href="https://docs.blender.org/manual/en/latest/modeling/meshes/uv/unwrapping/seams.html" target="_blank" rel="noopener"><span>Resource</span>UV Seams</a></div>
       <div class="days">
-        <article class="day-card">
+        
+        <article class="day-card" id="session-31">
           <div class="day-top">
             <label class="checkline">
               <input type="checkbox" id="day31" data-camp-check>
               <span class="fake-check"></span>
               <span>
                 <strong>Mon Jul 6</strong>
-                <em>Slicer Tour</em>
+                <em>Material Basics</em>
               </span>
             </label>
           </div>
           <div class="day-grid">
-            <div><b>Learn</b><p>Open PrusaSlicer or Cura and identify scale, rotate, supports, infill, and preview.</p></div>
-            <div><b>Build</b><p>Import a previous STL and inspect it in preview mode.</p></div>
-            <div><b>Done when</b><p>She can point to the main slicer controls.</p></div>
+            <div><b>Learn</b><p>Watch Chapter 4 from 1:30:15 to 2:03:48 in pieces. Learn base color, roughness, metallic, and material slots.</p></div>
+            <div><b>Build</b><p>Assign different materials to a creature, prop, or functional print concept.</p></div>
+            <div><b>Done when</b><p>The model is visually readable before textures.</p></div>
+            <div><b>Reference</b><p>Read Materials.</p><p class="mini-links"><a href="https://www.youtube.com/watch?v=z-Xl9tGqH14" target="_blank" rel="noopener">Tutorial Video</a><a href="https://docs.blender.org/manual/en/latest/render/materials/introduction.html" target="_blank" rel="noopener">Materials</a></p></div>
           </div>
           <label class="notes-label" for="notes31">Camp notes</label>
           <textarea id="notes31" data-camp-note placeholder="What did she make, fix, learn, or want to try next?"></textarea>
         </article>
-        <article class="day-card">
+        <article class="day-card" id="session-32">
           <div class="day-top">
             <label class="checkline">
               <input type="checkbox" id="day32" data-camp-check>
               <span class="fake-check"></span>
               <span>
                 <strong>Tue Jul 7</strong>
-                <em>Layer Height Test</em>
+                <em>Procedural Texture Thinking</em>
               </span>
             </label>
           </div>
           <div class="day-grid">
-            <div><b>Learn</b><p>Compare draft quality and higher quality settings.</p></div>
-            <div><b>Build</b><p>Slice the same model two ways and compare time estimates.</p></div>
-            <div><b>Done when</b><p>She sees that quality costs time.</p></div>
+            <div><b>Learn</b><p>Watch Chapter 5 from 2:03:48 onward as needed. Focus on why texture adds small visual detail.</p></div>
+            <div><b>Build</b><p>Make 3 material variants: toy plastic, ceramic, stone, metal, candy, clay, or painted wood.</p></div>
+            <div><b>Done when</b><p>She can explain which material best fits the model.</p></div>
+            <div><b>Reference</b><p>Read Shader Nodes.</p><p class="mini-links"><a href="https://www.youtube.com/watch?v=z-Xl9tGqH14" target="_blank" rel="noopener">Tutorial Video</a><a href="https://docs.blender.org/manual/en/latest/render/shader_nodes/introduction.html" target="_blank" rel="noopener">Shader Nodes</a></p></div>
           </div>
           <label class="notes-label" for="notes32">Camp notes</label>
           <textarea id="notes32" data-camp-note placeholder="What did she make, fix, learn, or want to try next?"></textarea>
         </article>
-        <article class="day-card">
+        <article class="day-card" id="session-33">
           <div class="day-top">
             <label class="checkline">
               <input type="checkbox" id="day33" data-camp-check>
               <span class="fake-check"></span>
               <span>
                 <strong>Wed Jul 8</strong>
-                <em>Infill and Strength</em>
+                <em>UVs Without Panic</em>
               </span>
             </label>
           </div>
           <div class="day-grid">
-            <div><b>Learn</b><p>Compare low, medium, and high infill visually.</p></div>
-            <div><b>Build</b><p>Choose an infill setting for a decorative object and a functional object.</p></div>
-            <div><b>Done when</b><p>She knows strength and filament use are tradeoffs.</p></div>
+            <div><b>Learn</b><p>Watch the start of Chapter 6 from 2:35:42. Learn that UVs flatten a 3D object so an image can fit it.</p></div>
+            <div><b>Build</b><p>Use a simple cube, cylinder, or mug shape to unwrap and test a checker pattern or simple image.</p></div>
+            <div><b>Done when</b><p>She understands the map idea even if she is not fast yet.</p></div>
+            <div><b>Reference</b><p>Read UV Intro and UV Unwrapping.</p><p class="mini-links"><a href="https://www.youtube.com/watch?v=z-Xl9tGqH14" target="_blank" rel="noopener">Tutorial Video</a><a href="https://docs.blender.org/manual/en/latest/modeling/meshes/uv/index.html" target="_blank" rel="noopener">UV Intro</a><a href="https://docs.blender.org/manual/en/latest/modeling/meshes/uv/unwrapping/introduction.html" target="_blank" rel="noopener">UV Unwrapping</a></p></div>
           </div>
           <label class="notes-label" for="notes33">Camp notes</label>
           <textarea id="notes33" data-camp-note placeholder="What did she make, fix, learn, or want to try next?"></textarea>
         </article>
-        <article class="day-card">
+        <article class="day-card" id="session-34">
           <div class="day-top">
             <label class="checkline">
               <input type="checkbox" id="day34" data-camp-check>
               <span class="fake-check"></span>
               <span>
                 <strong>Thu Jul 9</strong>
-                <em>Supports Lab</em>
+                <em>Seams and Texture Placement</em>
               </span>
             </label>
           </div>
           <div class="day-grid">
-            <div><b>Learn</b><p>Find overhangs and compare supports on/off.</p></div>
-            <div><b>Build</b><p>Modify one model to need fewer supports.</p></div>
-            <div><b>Done when</b><p>She understands that modeling choices can make printing easier.</p></div>
+            <div><b>Learn</b><p>Learn seams are controlled cuts, not mistakes. Keep the object simple.</p></div>
+            <div><b>Build</b><p>Place seams on the back or bottom of a simple model and unwrap again.</p></div>
+            <div><b>Done when</b><p>The texture lands more predictably after seam choices.</p></div>
+            <div><b>Reference</b><p>Read UV Seams.</p><p class="mini-links"><a href="https://docs.blender.org/manual/en/latest/modeling/meshes/uv/unwrapping/seams.html" target="_blank" rel="noopener">UV Seams</a></p></div>
           </div>
           <label class="notes-label" for="notes34">Camp notes</label>
           <textarea id="notes34" data-camp-note placeholder="What did she make, fix, learn, or want to try next?"></textarea>
         </article>
-        <article class="day-card">
+        <article class="day-card" id="session-35">
           <div class="day-top">
             <label class="checkline">
               <input type="checkbox" id="day35" data-camp-check>
               <span class="fake-check"></span>
               <span>
                 <strong>Fri Jul 10</strong>
-                <em>Reprint Improvement</em>
+                <em>Surface Design Friday</em>
               </span>
             </label>
           </div>
           <div class="day-grid">
-            <div><b>Learn</b><p>Pick one failed or imperfect print and improve it.</p></div>
-            <div><b>Build</b><p>Change the model or slicer settings, then reprint if practical.</p></div>
-            <div><b>Done when</b><p>The second attempt is smarter than the first.</p></div>
+            <div><b>Learn</b><p>Combine materials, simple texture thinking, and presentation screenshots.</p></div>
+            <div><b>Build</b><p>Make a color and material sheet for one model: 3 renders or screenshots showing variants.</p></div>
+            <div><b>Done when</b><p>She has a visual plan for how the print might be painted or colored.</p></div>
+            <div><b>Reference</b><p>Review Materials and Shader Nodes.</p><p class="mini-links"><a href="https://docs.blender.org/manual/en/latest/render/materials/introduction.html" target="_blank" rel="noopener">Materials</a><a href="https://docs.blender.org/manual/en/latest/render/shader_nodes/introduction.html" target="_blank" rel="noopener">Shader Nodes</a></p></div>
           </div>
           <label class="notes-label" for="notes35">Camp notes</label>
           <textarea id="notes35" data-camp-note placeholder="What did she make, fix, learn, or want to try next?"></textarea>
         </article>
       </div>
     </section>
-    
-
     <section class="week page-break">
       <div class="week-header">
         <div>
-          <p class="eyebrow">Week 8 | July 13-17</p>
-          <h2>Personal Project Build</h2>
+          <p class="eyebrow">Week 8 | July 13 to July 17</p>
+          <h2>Scenes, Scattering, Lighting, and Rendering</h2>
         </div>
-        <span class="week-badge">5 days</span>
+        <span class="week-badge">5 camp days</span>
       </div>
       <div class="week-summary">
-        <div><b>Goal</b><p>Let her choose a project that feels like hers while using the process she learned.</p></div>
-        <div><b>Deliverable</b><p>A personal model chosen by her and prepared for final print week.</p></div>
-        <div><b>Skills</b><ul><li>Project planning</li><li>Independent modeling</li><li>Iteration</li><li>Design choices</li></ul></div>
+        <div><b>Goal</b><p>Give her enough presentation skill to show her models proudly without turning the course into animation school.</p></div>
+        <div><b>Deliverable</b><p>A final render image and a simple staged scene for a printed model.</p></div>
+        <div><b>Skills</b><ul><li>Camera</li><li>Lights</li><li>Scatter</li><li>Scene composition</li><li>Eevee</li><li>Cycles</li><li>Output settings</li></ul></div>
       </div>
-      <div class="resource-row"><a class="resource-pill" href="https://studio.blender.org/training/blender-fundamentals-45-lts/" target="_blank" rel="noopener"><span>Main lessons</span>Blender Fundamentals 4.5 LTS</a><a class="resource-pill" href="https://docs.blender.org/manual/en/4.1/addons/mesh/3d_print_toolbox.html" target="_blank" rel="noopener"><span>Print prep</span>Blender 3D Print Toolbox Manual</a><a class="resource-pill" href="https://science.nasa.gov/3d-resources/" target="_blank" rel="noopener"><span>Inspiration</span>NASA 3D Resources</a></div>
+      <div class="resource-row"><a class="resource-pill" href="https://www.youtube.com/watch?v=z-Xl9tGqH14" target="_blank" rel="noopener"><span>Resource</span>Tutorial Video</a><a class="resource-pill" href="https://docs.blender.org/manual/en/latest/editors/3dview/navigate/camera_view.html" target="_blank" rel="noopener"><span>Resource</span>Camera View</a><a class="resource-pill" href="https://docs.blender.org/manual/en/latest/render/lights/index.html" target="_blank" rel="noopener"><span>Resource</span>Lights</a><a class="resource-pill" href="https://docs.blender.org/manual/en/latest/render/eevee/introduction.html" target="_blank" rel="noopener"><span>Resource</span>Eevee</a><a class="resource-pill" href="https://docs.blender.org/manual/en/latest/render/cycles/introduction.html" target="_blank" rel="noopener"><span>Resource</span>Cycles</a><a class="resource-pill" href="https://docs.blender.org/manual/en/latest/render/color_management/index.html" target="_blank" rel="noopener"><span>Resource</span>Color Management</a><a class="resource-pill" href="https://docs.blender.org/manual/en/latest/render/output/introduction.html" target="_blank" rel="noopener"><span>Resource</span>Output</a></div>
       <div class="days">
-        <article class="day-card">
+        
+        <article class="day-card" id="session-36">
           <div class="day-top">
             <label class="checkline">
               <input type="checkbox" id="day36" data-camp-check>
               <span class="fake-check"></span>
               <span>
                 <strong>Mon Jul 13</strong>
-                <em>Pick the Big Project</em>
+                <em>Camera and Composition</em>
               </span>
             </label>
           </div>
           <div class="day-grid">
-            <div><b>Learn</b><p>Choose one project: creature, miniature, jewelry, desk object, toy, sign, or useful part.</p></div>
-            <div><b>Build</b><p>Make a one-page plan with sketch, size, difficulty, and print goal.</p></div>
-            <div><b>Done when</b><p>The project is exciting but realistic.</p></div>
+            <div><b>Learn</b><p>Learn camera view, focal distance basics, foreground/background, and why screenshots are not the same as renders.</p></div>
+            <div><b>Build</b><p>Place the camera on one finished model and make three compositions.</p></div>
+            <div><b>Done when</b><p>One camera angle makes the model look intentional.</p></div>
+            <div><b>Reference</b><p>Read Camera View.</p><p class="mini-links"><a href="https://docs.blender.org/manual/en/latest/editors/3dview/navigate/camera_view.html" target="_blank" rel="noopener">Camera View</a></p></div>
           </div>
           <label class="notes-label" for="notes36">Camp notes</label>
           <textarea id="notes36" data-camp-note placeholder="What did she make, fix, learn, or want to try next?"></textarea>
         </article>
-        <article class="day-card">
+        <article class="day-card" id="session-37">
           <div class="day-top">
             <label class="checkline">
               <input type="checkbox" id="day37" data-camp-check>
               <span class="fake-check"></span>
               <span>
                 <strong>Tue Jul 14</strong>
-                <em>Blockout Day</em>
+                <em>Lighting Lab</em>
               </span>
             </label>
           </div>
           <div class="day-grid">
-            <div><b>Learn</b><p>Build the main forms only.</p></div>
-            <div><b>Build</b><p>Do not add tiny details until the silhouette works.</p></div>
-            <div><b>Done when</b><p>The project reads clearly from far away.</p></div>
+            <div><b>Learn</b><p>Watch Chapter 8 lighting section from 3:46:13 as needed. Learn key light, fill light, rim light, shadows.</p></div>
+            <div><b>Build</b><p>Make the same model look spooky, cheerful, dramatic, and product-photo clean by changing lighting.</p></div>
+            <div><b>Done when</b><p>She can tell how lighting changes the mood.</p></div>
+            <div><b>Reference</b><p>Read Lights and Color Management.</p><p class="mini-links"><a href="https://www.youtube.com/watch?v=z-Xl9tGqH14" target="_blank" rel="noopener">Tutorial Video</a><a href="https://docs.blender.org/manual/en/latest/render/lights/index.html" target="_blank" rel="noopener">Lights</a><a href="https://docs.blender.org/manual/en/latest/render/color_management/index.html" target="_blank" rel="noopener">Color Management</a></p></div>
           </div>
           <label class="notes-label" for="notes37">Camp notes</label>
           <textarea id="notes37" data-camp-note placeholder="What did she make, fix, learn, or want to try next?"></textarea>
         </article>
-        <article class="day-card">
+        <article class="day-card" id="session-38">
           <div class="day-top">
             <label class="checkline">
               <input type="checkbox" id="day38" data-camp-check>
               <span class="fake-check"></span>
               <span>
                 <strong>Wed Jul 15</strong>
-                <em>Feature Day</em>
+                <em>Scatter and Small Repeated Details</em>
               </span>
             </label>
           </div>
           <div class="day-grid">
-            <div><b>Learn</b><p>Add the features that make the design unique.</p></div>
-            <div><b>Build</b><p>Build the face, pattern, logo, tool, accessory, texture, or mechanism.</p></div>
-            <div><b>Done when</b><p>The model has an identity.</p></div>
+            <div><b>Learn</b><p>Watch Chapter 7 from 3:09:28 to 3:46:13 in pieces. Keep this optional if Blender version or computer struggles.</p></div>
+            <div><b>Build</b><p>Create sprinkles, pebbles, stars, leaves, scales, studs, or crystals and scatter or manually place them on a surface.</p></div>
+            <div><b>Done when</b><p>Repeated details improve the scene without overwhelming it.</p></div>
+            <div><b>Reference</b><p>Use the video and Mesh Primitives if the manual is too much here.</p><p class="mini-links"><a href="https://www.youtube.com/watch?v=z-Xl9tGqH14" target="_blank" rel="noopener">Tutorial Video</a><a href="https://docs.blender.org/manual/en/latest/modeling/meshes/primitives.html" target="_blank" rel="noopener">Mesh Primitives</a></p></div>
           </div>
           <label class="notes-label" for="notes38">Camp notes</label>
           <textarea id="notes38" data-camp-note placeholder="What did she make, fix, learn, or want to try next?"></textarea>
         </article>
-        <article class="day-card">
+        <article class="day-card" id="session-39">
           <div class="day-top">
             <label class="checkline">
               <input type="checkbox" id="day39" data-camp-check>
               <span class="fake-check"></span>
               <span>
                 <strong>Thu Jul 16</strong>
-                <em>Printability Check</em>
+                <em>Eevee vs Cycles</em>
               </span>
             </label>
           </div>
           <div class="day-grid">
-            <div><b>Learn</b><p>Check scale, weak parts, overhangs, and mesh problems.</p></div>
-            <div><b>Build</b><p>Fix the top 3 issues before slicing.</p></div>
-            <div><b>Done when</b><p>The model is not just cool, it is printable.</p></div>
+            <div><b>Learn</b><p>Learn the practical choice: Eevee for speed, Cycles for realism when the computer can handle it.</p></div>
+            <div><b>Build</b><p>Render the same scene in Eevee and, if possible, one low sample Cycles test.</p></div>
+            <div><b>Done when</b><p>She knows which engine is practical for her computer.</p></div>
+            <div><b>Reference</b><p>Read Eevee and Cycles.</p><p class="mini-links"><a href="https://docs.blender.org/manual/en/latest/render/eevee/introduction.html" target="_blank" rel="noopener">Eevee</a><a href="https://docs.blender.org/manual/en/latest/render/cycles/introduction.html" target="_blank" rel="noopener">Cycles</a></p></div>
           </div>
           <label class="notes-label" for="notes39">Camp notes</label>
           <textarea id="notes39" data-camp-note placeholder="What did she make, fix, learn, or want to try next?"></textarea>
         </article>
-        <article class="day-card">
+        <article class="day-card" id="session-40">
           <div class="day-top">
             <label class="checkline">
               <input type="checkbox" id="day40" data-camp-check>
               <span class="fake-check"></span>
               <span>
                 <strong>Fri Jul 17</strong>
-                <em>Prototype Slice or Print</em>
+                <em>Render Friday</em>
               </span>
             </label>
           </div>
           <div class="day-grid">
-            <div><b>Learn</b><p>Slice the personal project and look for problems.</p></div>
-            <div><b>Build</b><p>Run a small prototype print if practical.</p></div>
-            <div><b>Done when</b><p>She has evidence for what to fix next week.</p></div>
+            <div><b>Learn</b><p>Choose one model and make a final image with title, camera, lighting, and material choices.</p></div>
+            <div><b>Build</b><p>Save the render and add it to the portfolio folder.</p></div>
+            <div><b>Done when</b><p>One presentation image is ready for the final showcase.</p></div>
+            <div><b>Reference</b><p>Read Output.</p><p class="mini-links"><a href="https://docs.blender.org/manual/en/latest/render/output/introduction.html" target="_blank" rel="noopener">Output</a></p></div>
           </div>
           <label class="notes-label" for="notes40">Camp notes</label>
           <textarea id="notes40" data-camp-note placeholder="What did she make, fix, learn, or want to try next?"></textarea>
         </article>
       </div>
     </section>
-    
-
     <section class="week page-break">
       <div class="week-header">
         <div>
-          <p class="eyebrow">Week 9 | July 20-24</p>
-          <h2>Final Build and Portfolio Week</h2>
+          <p class="eyebrow">Week 9 | July 20 to July 24</p>
+          <h2>Independent Personal Project Build</h2>
         </div>
-        <span class="week-badge">5 days</span>
+        <span class="week-badge">5 camp days</span>
       </div>
       <div class="week-summary">
-        <div><b>Goal</b><p>Finish one strong project and package the story of how she made it.</p></div>
-        <div><b>Deliverable</b><p>A final printed or print-ready project with photos and a portfolio page.</p></div>
-        <div><b>Skills</b><ul><li>Revision</li><li>Final export</li><li>Photography</li><li>Presentation</li></ul></div>
+        <div><b>Goal</b><p>Now she uses the skills without being dragged by the tutorial. This is the proof week.</p></div>
+        <div><b>Deliverable</b><p>One original model taken from concept to print prep, render, and presentation notes.</p></div>
+        <div><b>Skills</b><ul><li>Planning</li><li>Modeling</li><li>Sculpting</li><li>Print prep</li><li>Revision</li><li>Portfolio</li></ul></div>
       </div>
-      <div class="resource-row"><a class="resource-pill" href="https://docs.blender.org/manual/en/4.1/addons/mesh/3d_print_toolbox.html" target="_blank" rel="noopener"><span>Print prep</span>Blender 3D Print Toolbox Manual</a><a class="resource-pill" href="https://help.prusa3d.com/article/first-print-with-prusaslicer_1753" target="_blank" rel="noopener"><span>Slicer</span>PrusaSlicer First Print Guide</a><a class="resource-pill" href="https://www.autodesk.com/education/edu-software/fusion" target="_blank" rel="noopener"><span>CAD add-on</span>Autodesk Fusion Education Access</a></div>
+      <div class="resource-row"><a class="resource-pill" href="https://docs.blender.org/manual/en/latest/index.html" target="_blank" rel="noopener"><span>Resource</span>Blender Manual 5.1</a><a class="resource-pill" href="https://docs.blender.org/manual/en/latest/modeling/meshes/editing/mesh/cleanup.html" target="_blank" rel="noopener"><span>Resource</span>Clean Up</a><a class="resource-pill" href="https://docs.blender.org/manual/en/latest/modeling/meshes/editing/mesh/normals.html" target="_blank" rel="noopener"><span>Resource</span>Normals</a><a class="resource-pill" href="https://extensions.blender.org/add-ons/print3d-toolbox/" target="_blank" rel="noopener"><span>Resource</span>3D Print Toolbox Extension</a><a class="resource-pill" href="https://help.prusa3d.com/article/first-print-with-prusaslicer_1753" target="_blank" rel="noopener"><span>Resource</span>PrusaSlicer First Print</a><a class="resource-pill" href="https://docs.blender.org/manual/en/latest/render/output/introduction.html" target="_blank" rel="noopener"><span>Resource</span>Output</a></div>
       <div class="days">
-        <article class="day-card">
+        
+        <article class="day-card" id="session-41">
           <div class="day-top">
             <label class="checkline">
               <input type="checkbox" id="day41" data-camp-check>
               <span class="fake-check"></span>
               <span>
                 <strong>Mon Jul 20</strong>
-                <em>Fix List Day</em>
+                <em>Pick the Final Project</em>
               </span>
             </label>
           </div>
           <div class="day-grid">
-            <div><b>Learn</b><p>Use prototype notes to fix the model.</p></div>
-            <div><b>Build</b><p>Focus only on issues that affect print success or final appearance.</p></div>
-            <div><b>Done when</b><p>The model is better because of testing.</p></div>
+            <div><b>Learn</b><p>Choose one final project: creature figure, fantasy prop, useful desk object, jewelry charm, miniature environment, or personalized gift.</p></div>
+            <div><b>Build</b><p>Make a one page project brief: idea, user, size, tools, references, print risks, and finish goal.</p></div>
+            <div><b>Done when</b><p>The project is scoped small enough to finish this week.</p></div>
+            <div><b>Reference</b><p>Use the Blender Manual as needed rather than watching more video.</p><p class="mini-links"><a href="https://docs.blender.org/manual/en/latest/index.html" target="_blank" rel="noopener">Blender Manual 5.1</a></p></div>
           </div>
           <label class="notes-label" for="notes41">Camp notes</label>
           <textarea id="notes41" data-camp-note placeholder="What did she make, fix, learn, or want to try next?"></textarea>
         </article>
-        <article class="day-card">
+        <article class="day-card" id="session-42">
           <div class="day-top">
             <label class="checkline">
               <input type="checkbox" id="day42" data-camp-check>
               <span class="fake-check"></span>
               <span>
                 <strong>Tue Jul 21</strong>
-                <em>Final Detail Pass</em>
+                <em>Blockout Day</em>
               </span>
             </label>
           </div>
           <div class="day-grid">
-            <div><b>Learn</b><p>Add final details without making the model fragile.</p></div>
-            <div><b>Build</b><p>Save final .blend and backup version.</p></div>
-            <div><b>Done when</b><p>The final file is organized.</p></div>
+            <div><b>Learn</b><p>Build the simplest version of the final project with primitives or broad sculpt forms.</p></div>
+            <div><b>Build</b><p>No tiny details until the silhouette and proportions are working.</p></div>
+            <div><b>Done when</b><p>The model reads correctly from far away.</p></div>
+            <div><b>Reference</b><p>Use Mesh Primitives, Mesh Editing, and Sculpting Overview as needed.</p><p class="mini-links"><a href="https://docs.blender.org/manual/en/latest/modeling/meshes/primitives.html" target="_blank" rel="noopener">Mesh Primitives</a><a href="https://docs.blender.org/manual/en/latest/modeling/meshes/editing/introduction.html" target="_blank" rel="noopener">Mesh Editing</a><a href="https://docs.blender.org/manual/en/latest/sculpt_paint/sculpting/introduction/general.html" target="_blank" rel="noopener">Sculpting Overview</a></p></div>
           </div>
           <label class="notes-label" for="notes42">Camp notes</label>
           <textarea id="notes42" data-camp-note placeholder="What did she make, fix, learn, or want to try next?"></textarea>
         </article>
-        <article class="day-card">
+        <article class="day-card" id="session-43">
           <div class="day-top">
             <label class="checkline">
               <input type="checkbox" id="day43" data-camp-check>
               <span class="fake-check"></span>
               <span>
                 <strong>Wed Jul 22</strong>
-                <em>Final Slice</em>
+                <em>Detail and Structure Day</em>
               </span>
             </label>
           </div>
           <div class="day-grid">
-            <div><b>Learn</b><p>Slice final STL. Parent reviews temperature, supports, time, and bed placement.</p></div>
-            <div><b>Build</b><p>Start final print if practical.</p></div>
-            <div><b>Done when</b><p>The print plan is realistic.</p></div>
+            <div><b>Learn</b><p>Add only details that support the idea: face, surface, labels, holes, accessories, texture, or functional features.</p></div>
+            <div><b>Build</b><p>Save v02, v03, and a backup. Keep details printable.</p></div>
+            <div><b>Done when</b><p>The model looks finished without becoming fragile.</p></div>
+            <div><b>Reference</b><p>Use Bevel Modifier, Clean Up, and Normals.</p><p class="mini-links"><a href="https://docs.blender.org/manual/en/latest/modeling/modifiers/generate/bevel.html" target="_blank" rel="noopener">Bevel Modifier</a><a href="https://docs.blender.org/manual/en/latest/modeling/meshes/editing/mesh/cleanup.html" target="_blank" rel="noopener">Clean Up</a><a href="https://docs.blender.org/manual/en/latest/modeling/meshes/editing/mesh/normals.html" target="_blank" rel="noopener">Normals</a></p></div>
           </div>
           <label class="notes-label" for="notes43">Camp notes</label>
           <textarea id="notes43" data-camp-note placeholder="What did she make, fix, learn, or want to try next?"></textarea>
         </article>
-        <article class="day-card">
+        <article class="day-card" id="session-44">
           <div class="day-top">
             <label class="checkline">
               <input type="checkbox" id="day44" data-camp-check>
               <span class="fake-check"></span>
               <span>
                 <strong>Thu Jul 23</strong>
-                <em>Finish and Photograph</em>
+                <em>Print Prep and Test Plan</em>
               </span>
             </label>
           </div>
           <div class="day-grid">
-            <div><b>Learn</b><p>Remove supports. Sand or paint only if appropriate and safe.</p></div>
-            <div><b>Build</b><p>Take photos from front, side, top, and in-use or display.</p></div>
-            <div><b>Done when</b><p>The project looks finished.</p></div>
+            <div><b>Learn</b><p>Check scale, base, thickness, overhangs, orientation, supports, and slicer preview.</p></div>
+            <div><b>Build</b><p>Export STL, slice, and write down settings. Print a small test if reasonable.</p></div>
+            <div><b>Done when</b><p>She has a concrete print plan and knows the biggest risk.</p></div>
+            <div><b>Reference</b><p>Use 3D Print Toolbox Extension and PrusaSlicer First Print.</p><p class="mini-links"><a href="https://extensions.blender.org/add-ons/print3d-toolbox/" target="_blank" rel="noopener">3D Print Toolbox Extension</a><a href="https://help.prusa3d.com/article/first-print-with-prusaslicer_1753" target="_blank" rel="noopener">PrusaSlicer First Print</a></p></div>
           </div>
           <label class="notes-label" for="notes44">Camp notes</label>
           <textarea id="notes44" data-camp-note placeholder="What did she make, fix, learn, or want to try next?"></textarea>
         </article>
-        <article class="day-card">
+        <article class="day-card" id="session-45">
           <div class="day-top">
             <label class="checkline">
               <input type="checkbox" id="day45" data-camp-check>
               <span class="fake-check"></span>
               <span>
                 <strong>Fri Jul 24</strong>
-                <em>Showcase Friday</em>
+                <em>Polish, Render, and Portfolio Page</em>
               </span>
             </label>
           </div>
           <div class="day-grid">
-            <div><b>Learn</b><p>Create a portfolio page with title, goal, software, settings, problems, and final photos.</p></div>
-            <div><b>Build</b><p>Present the project to family in 3 minutes.</p></div>
-            <div><b>Done when</b><p>She can explain her own design process.</p></div>
+            <div><b>Learn</b><p>Finish the model, create a render or screenshot, and document the project.</p></div>
+            <div><b>Build</b><p>Make a portfolio page with title, goal, software, tools used, settings, print result, problems, and next improvement.</p></div>
+            <div><b>Done when</b><p>The final project is ready to show.</p></div>
+            <div><b>Reference</b><p>Use Output and Color Management for the image.</p><p class="mini-links"><a href="https://docs.blender.org/manual/en/latest/render/output/introduction.html" target="_blank" rel="noopener">Output</a><a href="https://docs.blender.org/manual/en/latest/render/color_management/index.html" target="_blank" rel="noopener">Color Management</a></p></div>
           </div>
           <label class="notes-label" for="notes45">Camp notes</label>
           <textarea id="notes45" data-camp-note placeholder="What did she make, fix, learn, or want to try next?"></textarea>
         </article>
       </div>
     </section>
-    
-
     <section class="week page-break">
       <div class="week-header">
         <div>
           <p class="eyebrow">Final Day | July 27</p>
-          <h2>Back-to-School Maker Showcase</h2>
+          <h2>Back to School Maker Showcase</h2>
         </div>
-        <span class="week-badge">1 day</span>
+        <span class="week-badge">1 camp day</span>
       </div>
       <div class="week-summary">
-        <div><b>Goal</b><p>Wrap the summer, preserve the files, and set the next learning path.</p></div>
-        <div><b>Deliverable</b><p>A backed-up portfolio folder and a next-project list.</p></div>
-        <div><b>Skills</b><ul><li>Reflection</li><li>File backup</li><li>Portfolio thinking</li><li>Next-step planning</li></ul></div>
+        <div><b>Goal</b><p>Wrap the summer, preserve the files, and set the next path.</p></div>
+        <div><b>Deliverable</b><p>A backed up portfolio folder and a next project list.</p></div>
+        <div><b>Skills</b><ul><li>Presentation</li><li>Backup</li><li>Reflection</li><li>Next steps</li></ul></div>
       </div>
-      <div class="resource-row"><a class="resource-pill" href="https://www.blender.org/download/" target="_blank" rel="noopener"><span>Core software</span>Blender Download</a><a class="resource-pill" href="https://studio.blender.org/training/blender-fundamentals-45-lts/" target="_blank" rel="noopener"><span>Main lessons</span>Blender Fundamentals 4.5 LTS</a><a class="resource-pill" href="https://www.autodesk.com/education/edu-software/fusion" target="_blank" rel="noopener"><span>CAD add-on</span>Autodesk Fusion Education Access</a></div>
+      <div class="resource-row"><a class="resource-pill" href="https://docs.blender.org/manual/en/latest/index.html" target="_blank" rel="noopener"><span>Resource</span>Blender Manual 5.1</a><a class="resource-pill" href="https://www.autodesk.com/education/edu-software/fusion" target="_blank" rel="noopener"><span>Resource</span>Fusion Education</a><a class="resource-pill" href="https://science.nasa.gov/3d-resources/" target="_blank" rel="noopener"><span>Resource</span>NASA 3D Resources</a></div>
       <div class="days">
-        <article class="day-card">
+        
+        <article class="day-card" id="session-46">
           <div class="day-top">
             <label class="checkline">
               <input type="checkbox" id="day46" data-camp-check>
               <span class="fake-check"></span>
               <span>
                 <strong>Mon Jul 27</strong>
-                <em>Final Showcase and Backup</em>
+                <em>Showcase and Backup</em>
               </span>
             </label>
           </div>
           <div class="day-grid">
-            <div><b>Learn</b><p>Put the best 5 files and photos into a portfolio folder. Back it up.</p></div>
-            <div><b>Build</b><p>Pick the next track: more Blender sculpting, Fusion functional prints, animation, or painted miniatures.</p></div>
-            <div><b>Done when</b><p>She ends summer with proof of progress and a next step.</p></div>
+            <div><b>Learn</b><p>Pick the best 5 files, best 3 photos or renders, and one favorite print. Back up the camp folder.</p></div>
+            <div><b>Build</b><p>Present the project in 3 minutes: what I made, what was hard, what I fixed, what I would make next.</p></div>
+            <div><b>Done when</b><p>She ends summer with proof of progress and a clear next step.</p></div>
+            <div><b>Reference</b><p>Choose the next track: more Blender sculpting, Fusion functional prints, animation, or painted miniatures.</p><p class="mini-links"><a href="https://docs.blender.org/manual/en/latest/index.html" target="_blank" rel="noopener">Blender Manual 5.1</a><a href="https://www.autodesk.com/education/edu-software/fusion" target="_blank" rel="noopener">Fusion Education</a><a href="https://science.nasa.gov/3d-resources/" target="_blank" rel="noopener">NASA 3D Resources</a></p></div>
           </div>
           <label class="notes-label" for="notes46">Camp notes</label>
           <textarea id="notes46" data-camp-note placeholder="What did she make, fix, learn, or want to try next?"></textarea>
         </article>
       </div>
     </section>
-    
 
   <section class="panel">
-    <h2>End-of-Summer Skill Rubric</h2>
-    <p>Use this in the final week. Do not grade perfection. Grade independence, problem solving, and whether she can explain her design choices.</p>
+    <h2>End of Summer Skill Rubric</h2>
+    <p>Grade independence, problem solving, and whether she can explain her design choices. Do not grade perfection.</p>
     <div class="rubric">
       <div class="rubric-card"><b>Navigation</b><label><input type="checkbox" data-skill-check> Moves around Blender confidently</label><label><input type="checkbox" data-skill-check> Uses views and focus selected</label></div>
-      <div class="rubric-card"><b>Modeling</b><label><input type="checkbox" data-skill-check> Uses edit mode</label><label><input type="checkbox" data-skill-check> Extrudes, bevels, and scales intentionally</label></div>
+      <div class="rubric-card"><b>Modeling</b><label><input type="checkbox" data-skill-check> Uses edit mode</label><label><input type="checkbox" data-skill-check> Extrudes, bevels, loops, and scales intentionally</label></div>
       <div class="rubric-card"><b>Sculpting</b><label><input type="checkbox" data-skill-check> Uses symmetry</label><label><input type="checkbox" data-skill-check> Builds large forms before details</label></div>
       <div class="rubric-card"><b>Print Prep</b><label><input type="checkbox" data-skill-check> Checks scale</label><label><input type="checkbox" data-skill-check> Understands supports and orientation</label></div>
       <div class="rubric-card"><b>Problem Solving</b><label><input type="checkbox" data-skill-check> Fixes based on print results</label><label><input type="checkbox" data-skill-check> Saves versions and backups</label></div>
-      <div class="rubric-card"><b>Portfolio</b><label><input type="checkbox" data-skill-check> Has photos</label><label><input type="checkbox" data-skill-check> Can explain the project in 3 minutes</label></div>
+      <div class="rubric-card"><b>Portfolio</b><label><input type="checkbox" data-skill-check> Has photos or renders</label><label><input type="checkbox" data-skill-check> Can explain the project in 3 minutes</label></div>
     </div>
   </section>
 
-  <p class="footer-note">Prepared for Summer 2026. Open in a browser for clickable links, checkboxes, saved notes, and print-to-PDF layout.</p>
+  <p class="footer-note">Prepared for Summer 2026. Open in a browser for clickable links, saved progress, saved notes, and print to PDF layout.</p>
 </div>
 
 <script>
@@ -1834,7 +1858,7 @@
 
   function keyFor(el, i) {
     if (!el.id) el.id = 'camp_item_' + i;
-    return 'summer3d_vacation_adjusted_' + el.id;
+    return 'summer3d_manual_enriched_v1_' + el.id;
   }
 
   checks.forEach((box, i) => {
