@@ -148,6 +148,22 @@
     color: white;
   }
   button.secondary { background: #edf2fb; color: var(--blue-dark); }
+    .game-launch-button {
+    display: inline-flex;
+    margin-top: 18px;
+    text-decoration: none;
+    background: #ffb000;
+    color: #172033;
+    border-radius: 16px;
+    padding: 13px 18px;
+    font-weight: 900;
+    box-shadow: 0 10px 24px rgba(21, 35, 68, .18);
+    position: relative;
+    z-index: 2;
+  }
+  .game-launch-button:hover {
+    transform: translateY(-1px);
+  }
   .grid-2 {
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -452,6 +468,7 @@
       <span class="kicker">Summer 2026 Maker Camp</span>
       <h1>Real 3D Modeling Camp</h1>
       <p>A 5 day per week summer camp plan for a smart 10 year old who already sculpts in the real world and wants to learn real 3D modeling for 3D printing. Blender is the main tool. Fusion is introduced later for exact functional parts. Vacation is protected from May 28 through June 5.</p>
+      <a class="game-launch-button" href="game.html">Open Blender Quest Game Dashboard</a>
       <div class="hero-stats">
         <div class="stat"><b>May 14</b><span>Launch day</span></div>
         <div class="stat"><b>July 28</b><span>Back to school</span></div>
